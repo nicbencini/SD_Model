@@ -1,0 +1,9 @@
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\bin\Debug\netstandard2.1\SD_Vector.deps.json
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\bin\Debug\netstandard2.1\SD_Vector.dll
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\bin\Debug\netstandard2.1\SD_Vector.pdb
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.AssemblyInfoInputs.cache
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.AssemblyInfo.cs
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.csproj.CoreCompileInputs.cache
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.dll
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.pdb
