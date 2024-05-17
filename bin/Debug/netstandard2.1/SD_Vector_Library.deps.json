@@ -7,15 +7,15 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "SD_Vector/1.0.0": {
+      "SD_Vector_Library/1.0.0": {
         "runtime": {
-          "SD_Vector.dll": {}
+          "SD_Vector_Library.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "SD_Vector/1.0.0": {
+    "SD_Vector_Library/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

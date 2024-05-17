@@ -1,8 +1,9 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using SD_Vector_Library.Vector;
 
-namespace SD_Vector.Geometry
+namespace SD_Vector_Library.Geometry
 {
 
     public class SD_Line 
@@ -13,16 +14,16 @@ namespace SD_Vector.Geometry
 
         // Cartesian equation of a line defined by       StPt + t (endPt - StPt)
 
-        internal double X(double t)
+        internal double _x(double t)
         {
             return StartPoint.X + (EndPoint.X - StartPoint.X) * t;
 
         }
-        internal double Y(double t)
+        internal double _y(double t)
         {
             return StartPoint.Y + (EndPoint.Y - StartPoint.Y) * t;
         }
-        internal double Z(double t)
+        internal double _z(double t)
         {
             return StartPoint.Z + (EndPoint.Z - StartPoint.Z) * t;
         }
@@ -73,7 +74,7 @@ namespace SD_Vector.Geometry
 
             //Gets a point on the line defined by parameter t where 0 is the StartPoint and 1 is the EndPoint of the line
 
-            return new SD_Point(X(t), Y(t), Z(t));
+            return new SD_Point(_x(t), _y(t), _z(t));
         }
 
 
@@ -83,7 +84,7 @@ namespace SD_Vector.Geometry
 
             //Gets a midpoint of a line
 
-            return new SD_Point(X(0.5), Y(0.5), Z(0.5));
+            return new SD_Point(_x(0.5), _y(0.5), _z(0.5));
         }
 
         /*
@@ -142,7 +143,7 @@ namespace SD_Vector.Geometry
                 double t = i / (n + 1);
 
                 tList.Add(t);
-                pointList.Add(new SD_Point(X(t), Y(t), Z(t)));
+                pointList.Add(new SD_Point(_x(t), _y(t), _z(t)));
 
             }
 

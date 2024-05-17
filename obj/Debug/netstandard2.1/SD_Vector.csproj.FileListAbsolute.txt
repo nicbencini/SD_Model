@@ -7,3 +7,4 @@ C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\S
 C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.csproj.CoreCompileInputs.cache
 C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.dll
 C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.pdb
+C:\Users\Nicolo\Desktop\StructuralDataModel\SD_Vector\obj\Debug\netstandard2.1\SD_Vector.sourcelink.json

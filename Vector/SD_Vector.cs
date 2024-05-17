@@ -1,7 +1,8 @@
 ﻿using System;
+using SD_Vector_Library.Geometry;
 
 
-namespace SD_Vector.Geometry
+namespace SD_Vector_Library.Vector
 {
     /// <summary>
     /// Vector object
@@ -79,17 +80,6 @@ namespace SD_Vector.Geometry
             Z = arr[2];
         }
 
-        public SD_Vector(double[] arr, int startIndex)
-        {
-            if (startIndex > arr.Length - 3) { throw new Exception("start index doesnt leave enough space to fill all vector parameters"); }
-            else
-            {
-                X = arr[startIndex];
-                Y = arr[startIndex + 1];
-                Z = arr[startIndex + 2];
-            }
-        }
-
 
         public override string ToString()
         {
@@ -109,7 +99,7 @@ namespace SD_Vector.Geometry
 
         public SD_Vector UpdateFromArray(double[] arr)
         {
-            if (arr.Length < 3) throw new Exception("Array is too small to convert to vector");
+            if (arr.Length < 3) throw new Exception("Array is too small. A minimum of 3 characters is required.");
             else
             {
                 X = arr[0];
@@ -119,17 +109,6 @@ namespace SD_Vector.Geometry
             return this;
         }
 
-        public SD_Vector UpdateFromArray(double[] arr, int startIndex)
-        {
-            if (startIndex + 2 > arr.Length - 1) throw new Exception("startindex is too high to fill vector");
-            else
-            {
-                X = arr[startIndex];
-                Y = arr[startIndex + 1];
-                Z = arr[startIndex + 2];
-            }
-            return this;
-        }
 
         public bool Equals(SD_Vector other)
         {

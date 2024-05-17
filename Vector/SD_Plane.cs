@@ -1,10 +1,11 @@
 ﻿
 using System;
+using SD_Vector_Library.Geometry;
+using SD_Vector_Library.Vector;
 
-
-namespace SD_Vector.Geometry
+namespace SD_Vector_Library.Vector
 {
-    public class SD_Plane 
+    public class SD_Plane
     {
         public SD_Vector Origin { get; set; }
         public SD_Vector XVector { get; set; }
@@ -167,7 +168,7 @@ namespace SD_Vector.Geometry
         }
         public SD_Matrix ToRotationMatrix()
         {
-           
+
 
             return new SD_Matrix(new double[][] { XVector.ToArray(), YVector.ToArray(), ZVector.ToArray() });
 

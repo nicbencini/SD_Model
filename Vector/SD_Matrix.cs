@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace SD_Vector.Geometry
+namespace SD_Vector_Library.Vector
 {
     public class SD_Matrix
     {
@@ -24,13 +24,13 @@ namespace SD_Vector.Geometry
 
             for (int i = 0; i < matrix.Length; i++)
             {
-                
+
                 if (matrix[i].Length != ColumnCount)
                 {
 
                     throw new Exception("Irregular Matrix: Matrix column lengths are not equal");
                 }
-                
+
             }
             Values = matrix;
         }
@@ -42,7 +42,7 @@ namespace SD_Vector.Geometry
 
             bool result = false;
 
-            if(this.RowCount == this.ColumnCount)
+            if (RowCount == ColumnCount)
             {
                 result = true;
             }
@@ -52,17 +52,17 @@ namespace SD_Vector.Geometry
         }
 
 
-        public bool Equals (SD_Matrix other)
+        public bool Equals(SD_Matrix other)
         {
             /// <summary>Checks whether matrix is equal to other matrix</summary>
-            
+
             bool result = false;
 
-            if((this.RowCount == other.RowCount)&& (this.ColumnCount == other.ColumnCount))
+            if (RowCount == other.RowCount && ColumnCount == other.ColumnCount)
             {
-                for (int i = 0; i < this.RowCount; i++)
+                for (int i = 0; i < RowCount; i++)
                 {
-                    if (this.Values[i] == other.Values[i])
+                    if (Values[i] == other.Values[i])
                     {
                         result = true;
                     }
@@ -72,7 +72,7 @@ namespace SD_Vector.Geometry
                         result = false;
                         break;
                     }
-                    
+
                 }
             }
             else
@@ -88,10 +88,10 @@ namespace SD_Vector.Geometry
         {
 
             /// <summary>Checks whether matrix is same size to other matrix</summary>
-            
+
             bool result = false;
 
-            if ((this.RowCount == other.RowCount) && (this.ColumnCount == other.ColumnCount))
+            if (RowCount == other.RowCount && ColumnCount == other.ColumnCount)
             {
                 result = true;
             }
@@ -105,25 +105,25 @@ namespace SD_Vector.Geometry
 
             SD_Matrix scaledMatrix = this * value;
 
-            this.Values = scaledMatrix.Values;
+            Values = scaledMatrix.Values;
         }
 
         public SD_Matrix Transpose()
         {
             /// <summary>Swaps matrix rows and columns</summary>
-            
-            double[][] outArray = new double[this.RowCount][];
 
-            if (this.IsSquare())
+            double[][] outArray = new double[RowCount][];
+
+            if (IsSquare())
             {
 
-                for (int i = 0; i < this.RowCount; i++)
+                for (int i = 0; i < RowCount; i++)
                 {
-                    double[] column = new double[this.ColumnCount];
+                    double[] column = new double[ColumnCount];
 
-                    for (int j = 0; j < this.ColumnCount; j++)
+                    for (int j = 0; j < ColumnCount; j++)
                     {
-                        column[j] = this.Values[j][i];
+                        column[j] = Values[j][i];
                     }
 
                     outArray[i] = column;
@@ -192,17 +192,17 @@ namespace SD_Vector.Geometry
 
         public void AddRange(Tuple<int, int> rowTuple, Tuple<int, int> columnTuple, SD_Matrix otherMatrix)
         {
-            
-            
-            
-            if((otherMatrix.RowCount == rowTuple.Item2 - rowTuple.Item1) && (otherMatrix.ColumnCount == columnTuple.Item2 - columnTuple.Item1))
+
+
+
+            if (otherMatrix.RowCount == rowTuple.Item2 - rowTuple.Item1 && otherMatrix.ColumnCount == columnTuple.Item2 - columnTuple.Item1)
             {
 
                 for (int i = 0; i < otherMatrix.RowCount; i++)
                 {
                     for (int j = 0; j < otherMatrix.ColumnCount; j++)
                     {
-                        this.Values[rowTuple.Item1 + i][columnTuple.Item1 + j] = otherMatrix.Values[i][j];
+                        Values[rowTuple.Item1 + i][columnTuple.Item1 + j] = otherMatrix.Values[i][j];
                     }
                 }
 
@@ -224,18 +224,18 @@ namespace SD_Vector.Geometry
             double[][] outArray = new double[rowCount][];
 
 
-            for (int i = 0; i < (rowCount); i++)
+            for (int i = 0; i < rowCount; i++)
             {
 
                 double[] column = new double[columnCount];
 
-                for (int j = 0; j < (columnCount); j++)
+                for (int j = 0; j < columnCount; j++)
                 {
-                    column[j] = this.Values[rowTuple.Item1 + i][columnTuple.Item1 + j];
+                    column[j] = Values[rowTuple.Item1 + i][columnTuple.Item1 + j];
                 }
 
                 outArray[i] = column;
-                
+
             }
 
             return new SD_Matrix(outArray);
@@ -245,35 +245,35 @@ namespace SD_Vector.Geometry
 
         public double[][] ToArray()
         {
-            return this.Values;
+            return Values;
         }
 
         public void RemoveRow(int index)
         {
-            double[][] outArray = new double[this.RowCount -1 ][];
+            double[][] outArray = new double[RowCount - 1][];
 
-            for (int i = 0; i < (RowCount); i++)
+            for (int i = 0; i < RowCount; i++)
             {
                 if (i < index)
                 {
-                    outArray[i] = this.Values[i];
+                    outArray[i] = Values[i];
                 }
-                else if(i> index)
+                else if (i > index)
                 {
-                    outArray[i-1] = this.Values[i];
+                    outArray[i - 1] = Values[i];
                 }
             }
 
-            this.Values = outArray;
+            Values = outArray;
 
         }
 
-        
+
         public void RemoveColumn(int index)
         {
-            double[][] outArray = new double[this.RowCount][];
+            double[][] outArray = new double[RowCount][];
 
-            for (int i = 0; i < (RowCount); i++)
+            for (int i = 0; i < RowCount; i++)
             {
 
                 double[] column = new double[ColumnCount - 1];
@@ -282,19 +282,19 @@ namespace SD_Vector.Geometry
                 {
                     if (j < index)
                     {
-                        column[j] = this.Values[i][j];
+                        column[j] = Values[i][j];
                     }
                     else if (j > index)
                     {
-                        column[j-1] = this.Values[i][j];
+                        column[j - 1] = Values[i][j];
                     }
                 }
 
                 outArray[i] = column;
-                
+
             }
 
-            this.Values = outArray;
+            Values = outArray;
         }
 
 
@@ -374,13 +374,13 @@ namespace SD_Vector.Geometry
                 outArray[i] = column;
 
             }
-            
+
 
 
             return new SD_Matrix(outArray);
         }
 
-        
+
         public static SD_Matrix operator *(SD_Matrix left, SD_Matrix right)
         {
             double[][] outArray = new double[left.RowCount][];
@@ -395,8 +395,8 @@ namespace SD_Vector.Geometry
                     {
 
                         double value = 0;
-                        
-                        for (int k= 0; k < left.ColumnCount; k++)
+
+                        for (int k = 0; k < left.ColumnCount; k++)
                         {
                             value += left.Values[i][k] * right.Values[k][j];
                         }

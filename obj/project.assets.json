@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Vector.csproj",
-      "projectName": "SD_Vector",
-      "projectPath": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Vector.csproj",
+      "projectUniqueName": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Vector_Library.csproj",
+      "projectName": "SD_Vector_Library",
+      "projectPath": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Vector_Library.csproj",
       "packagesPath": "C:\\Users\\Nicolo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\obj\\",
       "projectStyle": "PackageReference",
