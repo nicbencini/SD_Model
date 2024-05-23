@@ -4,6 +4,6 @@ The goal behind this project is to create a self-contained (does not rely on any
 
 This library was built using .Net Standard, so it is usable in .Net 5 and all later versions (for reference: https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0).
 
-The intention is to keep this project entirely open source and free to use under the MIT license.
+The intention is to keep this project entirely open source and free to use under the GNU3 license.
 
 This is currently still work-in-progress and in its early phases so any contributions or input would be welcome.
