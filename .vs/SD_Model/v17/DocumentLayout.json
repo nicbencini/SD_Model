@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\vector\\sd_vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|solutionrelative:vector\\sd_vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\vector\\sd_vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|solutionrelative:vector\\sd_vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|solutionrelative:.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\vector\\sd_plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|solutionrelative:vector\\sd_plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Model.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\sd_model.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Model.csproj|solutionrelative:sd_model.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\vector\\sd_matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|solutionrelative:vector\\sd_matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\vector\\sd_matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|solutionrelative:vector\\sd_matrix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\geometry\\sd_point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|solutionrelative:geometry\\sd_point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\geometry\\sd_point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|solutionrelative:geometry\\sd_point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\geometry\\sd_line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector.csproj|solutionrelative:geometry\\sd_line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\vector\\sd_plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|solutionrelative:vector\\sd_plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\sd_vector_library.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|solutionrelative:sd_vector_library.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|c:\\users\\nicolo\\desktop\\structuraldatamodel\\sd_vector\\geometry\\sd_line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9F35917-FBE2-422B-B958-0921181128F3}|SD_Vector_Library.csproj|solutionrelative:geometry\\sd_line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,12 +55,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SD_Vector",
-              "DocumentMoniker": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Vector_Library.csproj",
-              "RelativeDocumentMoniker": "SD_Vector_Library.csproj",
-              "ToolTip": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Vector_Library.csproj",
-              "RelativeToolTip": "SD_Vector_Library.csproj",
+              "DocumentIndex": 2,
+              "Title": "SD_Vector_Library",
+              "DocumentMoniker": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Model.csproj",
+              "RelativeDocumentMoniker": "SD_Model.csproj",
+              "ToolTip": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Model.csproj",
+              "RelativeToolTip": "SD_Model.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-05-11T17:23:01.199Z",
               "EditorCaption": ""
@@ -73,7 +73,7 @@
               "RelativeDocumentMoniker": "Vector\\SD_Matrix.cs",
               "ToolTip": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\Vector\\SD_Matrix.cs",
               "RelativeToolTip": "Vector\\SD_Matrix.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAMAAAAcAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAMAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T17:10:06.514Z",
               "EditorCaption": ""
@@ -86,7 +86,7 @@
               "RelativeDocumentMoniker": "Vector\\SD_Vector.cs",
               "ToolTip": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\Vector\\SD_Vector.cs",
               "RelativeToolTip": "Vector\\SD_Vector.cs",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAYwBcAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T17:04:45.615Z",
               "EditorCaption": ""
@@ -106,26 +106,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "SD_Plane.cs",
               "DocumentMoniker": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\Vector\\SD_Plane.cs",
               "RelativeDocumentMoniker": "Vector\\SD_Plane.cs",
               "ToolTip": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\Vector\\SD_Plane.cs",
               "RelativeToolTip": "Vector\\SD_Plane.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAiwAUAAAAcAAAA",
+              "ViewState": "AQIAAGYAAAAAAAAAAAA4wAUAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T17:04:03.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SD_Line.cs",
               "DocumentMoniker": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\Geometry\\SD_Line.cs",
               "RelativeDocumentMoniker": "Geometry\\SD_Line.cs",
               "ToolTip": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\Geometry\\SD_Line.cs",
               "RelativeToolTip": "Geometry\\SD_Line.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T17:02:24.77Z",
               "EditorCaption": ""

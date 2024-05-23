@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UqszLOTSqFFVm3T5ErWf+WhfGu7T1L5KaGrUbXSYa7VYZcgf3Vg93+jnaRTRh3XIQ8bKI8E5iZNfRrL/lbgaVQ==",
+  "dgSpecHash": "OmJQUAjGs8NOGVLEu89iilvwFJnGutkk3Rb2eQPaVo4Cuc01f4dYENILAsBcYE3rat0y5OSX/VVKijPV7y+xlw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Vector_Library.csproj",
+  "projectFilePath": "C:\\Users\\Nicolo\\Desktop\\StructuralDataModel\\SD_Vector\\SD_Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

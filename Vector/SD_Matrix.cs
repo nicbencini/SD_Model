@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace SD_Vector_Library.Vector
+namespace SD_Model.Vector
 {
     public class SD_Matrix
     {

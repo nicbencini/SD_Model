@@ -1,9 +1,9 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using SD_Vector_Library.Vector;
+using SD_Model.Vector;
 
-namespace SD_Vector_Library.Geometry
+namespace SD_Model.Geometry
 {
 
     public class SD_Line 

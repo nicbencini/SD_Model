@@ -1,9 +1,9 @@
 ﻿
 using System;
-using SD_Vector_Library.Geometry;
-using SD_Vector_Library.Vector;
+using SD_Model.Geometry;
+using SD_Model.Vector;
 
-namespace SD_Vector_Library.Vector
+namespace SD_Model.Vector
 {
     public class SD_Plane
     {

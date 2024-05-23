@@ -1,8 +1,8 @@
 ﻿using System;
-using SD_Vector_Library.Geometry;
+using SD_Model.Geometry;
 
 
-namespace SD_Vector_Library.Vector
+namespace SD_Model.Vector
 {
     /// <summary>
     /// Vector object
