@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SD_Model")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0366009ca9070de1a6fea3942a8651d77136b146")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbeb294970a081de3e78fe8f42c75988f097bc70")]
 [assembly: System.Reflection.AssemblyProductAttribute("SD_Model")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SD_Model")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

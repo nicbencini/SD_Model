@@ -3,20 +3,27 @@
 
 namespace SD_Model.Vector
 {
+    /// <summary>
+    /// Class <c>SD_Matrix</c> 
+    /// Matrix library class.
+    /// </summary>
     public class SD_Matrix
     {
-
         public double[][] Values { get; set; }
 
         public int RowCount { get; set; } // Rows are horizontal
 
         public int ColumnCount { get; set; } // Cols are vertical
 
-
+        /// <summary>
+        /// Create matrix from array of arrays.
+        /// </summary>
+        /// <param name="matrix"> (double[][]) Creates a matrix from a double array.</param>
+        /// <returns>
+        /// A 2-dimensional matrix.
+        /// </returns>
         public SD_Matrix(double[][] matrix)
         {
-
-            /// <summary>Create matrix from array of arrays</summary>
 
             RowCount = matrix.Length;
 
@@ -35,10 +42,15 @@ namespace SD_Model.Vector
             Values = matrix;
         }
 
-
+        /// <summary>
+        /// Checks whether matrix column length and row length are the same.
+        /// </summary>
+        /// <returns>
+        /// 'True' if matrix is square.
+        /// </returns>
         public bool IsSquare()
         {
-            /// <summary>Checks whether matrix column length and row length are the same</summary>
+            
 
             bool result = false;
 
@@ -51,11 +63,16 @@ namespace SD_Model.Vector
 
         }
 
-
+        /// <summary>
+        /// Checks whether matrix is equal to other matrix.
+        /// </summary>
+        /// <param name="other"> (SD_Matrix) The matrix to check against.</param>
+        /// <returns>
+        /// 'True' if matrices are equel.
+        /// </returns>
         public bool Equals(SD_Matrix other)
         {
-            /// <summary>Checks whether matrix is equal to other matrix</summary>
-
+            
             bool result = false;
 
             if (RowCount == other.RowCount && ColumnCount == other.ColumnCount)
@@ -84,10 +101,16 @@ namespace SD_Model.Vector
 
         }
 
+        /// <summary>
+        /// Checks whether matrix is same size to other matrix.
+        /// </summary>
+        /// <param name="other"> (SD_Matrix) The matrix to check against.</param>
+        /// <returns>
+        /// 'True' if matrices are the same size.
+        /// </returns>
+
         public bool IsSameSize(SD_Matrix other)
         {
-
-            /// <summary>Checks whether matrix is same size to other matrix</summary>
 
             bool result = false;
 
@@ -99,18 +122,30 @@ namespace SD_Model.Vector
             return result;
         }
 
+        /// <summary>
+        /// Scales a matrix by a value.
+        /// </summary>
+        /// <param name="value"> (double) The scalar value.</param>
+        /// <returns>
+        /// The scaled matrix.
+        /// </returns>
         public void Scale(double value)
         {
-            /// <summary>Scales a matrix by a value</summary>
+            
 
             SD_Matrix scaledMatrix = this * value;
 
             Values = scaledMatrix.Values;
         }
 
+        /// <summary>
+        /// Swaps matrix rows and columns.
+        /// </summary>
+        /// <returns>
+        /// The transposed matrix.
+        /// </returns>
         public SD_Matrix Transpose()
         {
-            /// <summary>Swaps matrix rows and columns</summary>
 
             double[][] outArray = new double[RowCount][];
 
@@ -139,9 +174,17 @@ namespace SD_Model.Vector
 
         }
 
+        /// <summary>
+        /// Creates an zero matrix of specified size.
+        /// </summary>
+        /// <param name="rowCount"> (int) The number of rows of the matrix.</param>
+        /// <param name="columnCount"> (int) The number of columns of the matrix.</param>
+        /// <returns>
+        /// The resultant zero matrix.
+        /// </returns>
         public static SD_Matrix ZeroMatrix(int rowCount, int columnCount)
         {
-            /// <summary>Creates an zero matrix of specified size</summary>
+            
 
             double[][] outArray = new double[rowCount][];
 
@@ -163,9 +206,16 @@ namespace SD_Model.Vector
 
         }
 
+        /// <summary>
+        /// Creates an identity matrix of specified size.
+        /// </summary>
+        /// <param name="rowCount"> (int) The number of rows of the matrix.</param>
+        /// <param name="columnCount"> (int) The number of columns of the matrix.</param>
+        /// <returns>
+        /// The resultant identity matrix.
+        /// </returns>
         public static SD_Matrix IdentityMatrix(int rowCount, int columnCount)
         {
-            /// <summary>Creates an identity matrix of specified size</summary>
 
             double[][] outArray = new double[rowCount][];
 
@@ -190,10 +240,17 @@ namespace SD_Model.Vector
 
         }
 
+        /// <summary>
+        /// Adds a range of values to a matrix.
+        /// </summary>
+        /// <param name="rowTuple"> (int) A tuple defining the row data and index.</param>
+        /// <param name="columnTuple"> (int) A tuple defining the column data and index</param>
+        /// /// <param name="otherMatrix"> (SD_Matrix) Matrix to add values to.</param>
+        /// <returns>
+        /// The updated matrix.
+        /// </returns>
         public void AddRange(Tuple<int, int> rowTuple, Tuple<int, int> columnTuple, SD_Matrix otherMatrix)
         {
-
-
 
             if (otherMatrix.RowCount == rowTuple.Item2 - rowTuple.Item1 && otherMatrix.ColumnCount == columnTuple.Item2 - columnTuple.Item1)
             {
@@ -215,6 +272,14 @@ namespace SD_Model.Vector
 
         }
 
+        /// <summary>
+        /// Gets a range of values to a matrix.
+        /// </summary>
+        /// <param name="rowTuple"> (int) A tuple defining the row data and index.</param>
+        /// <param name="columnTuple"> (int) A tuple defining the column data and index</param>
+        /// <returns>
+        /// The data matrix.
+        /// </returns>
         public SD_Matrix GetRange(Tuple<int, int> rowTuple, Tuple<int, int> columnTuple)
         {
 
@@ -243,11 +308,24 @@ namespace SD_Model.Vector
 
         }
 
+        /// <summary>
+        /// Converts a matrix to an array.
+        /// </summary>
+        /// <returns>
+        /// The 2 dimensionsal double array representing the matix.
+        /// </returns>
         public double[][] ToArray()
         {
             return Values;
         }
 
+        /// <summary>
+        /// Removes a row from a matix.
+        /// </summary>
+        /// <param name="index"> (int) The index of the row to remove.</param>
+        /// <returns>
+        /// The updated matix.
+        /// </returns>
         public void RemoveRow(int index)
         {
             double[][] outArray = new double[RowCount - 1][];
@@ -268,7 +346,13 @@ namespace SD_Model.Vector
 
         }
 
-
+        /// <summary>
+        /// Removes a column from a matix.
+        /// </summary>
+        /// <param name="index"> (int) The index of the column to remove.</param>
+        /// <returns>
+        /// The updated matix.
+        /// </returns>
         public void RemoveColumn(int index)
         {
             double[][] outArray = new double[RowCount][];

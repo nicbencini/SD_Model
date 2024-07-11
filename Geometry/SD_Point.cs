@@ -5,14 +5,23 @@ using SD_Model.Vector;
 
 namespace SD_Model.Geometry
 {
-
+    /// <summary>
+    /// Class <c>SD_Point</c> 
+    /// Class for creating a 3D point.
+    /// </summary>
     public class SD_Point 
     {
         public double X { get; set; }
         public double Y { get; set; }
         public double Z { get; set; }
 
-
+        /// <summary>
+        /// Returns a 3D point from a double.
+        /// </summary>
+        /// <param name="value"> (double) The value for the x,y and z coordinate of the line.</param>
+        /// <returns>
+        /// A 3D point in space.
+        /// </returns>
         public SD_Point(double value)
         {
             X = value;
@@ -21,6 +30,15 @@ namespace SD_Model.Geometry
 
         }
 
+        /// <summary>
+        /// Returns a 3D point from a 3 doubles.
+        /// </summary>
+        /// <param name="x"> (double) The value for the x coordinate of the line.</param>
+        /// <param name="y"> (double) The value for the y coordinate of the line.</param>
+        /// <param name="z"> (double) The value for the z coordinate of the line.</param>
+        /// <returns>
+        /// A 3D point in space.
+        /// </returns>
         public SD_Point(double x, double y, double z)
         {
             X = x;
@@ -29,14 +47,13 @@ namespace SD_Model.Geometry
 
         }
 
-
-        public SD_Point(SD_Point SD_Point)
-        {
-            X = SD_Point.X;
-            Y = SD_Point.Y;
-            Z = SD_Point.Z;
-
-        }
+        /// <summary>
+        /// Returns a 3D point from vector.
+        /// </summary>
+        /// <param name="vector"> (SD_Vector) A vector from which to generate the point.</param>
+        /// <returns>
+        /// A 3D point in space.
+        /// </returns>
 
         public SD_Point(SD_Vector vector)
         {
@@ -46,6 +63,13 @@ namespace SD_Model.Geometry
 
         }
 
+        /// <summary>
+        /// Returns a 3D point from an array.
+        /// </summary>
+        /// <param name="arr"> (double[]) A array containing the x,y and z coordinates.</param>
+        /// <returns>
+        /// A 3d point in space.
+        /// </returns>
         public SD_Point(double[] arr)
         {
             X = arr[0];
@@ -55,20 +79,34 @@ namespace SD_Model.Geometry
 
         }
 
-
-
+        /// <summary>
+        /// Returns a string representing the point.
+        /// </summary>
+        /// <returns>
+        /// A string representing the 3d point.
+        /// </returns>
         public override string ToString()
         {
             return "{" + X + ", " + Y + ", " + Z + "}";
         }
 
+        /// <summary>
+        /// Returns an array representing the point.
+        /// </summary>
+        /// <returns>
+        /// An array representing the 3d point.
+        /// </returns>
         public double[] ToArray()
         {
             return new double[] { X, Y, Z };
         }
 
-
-
+        /// <summary>
+        /// Updates a points coordinates from an array.
+        /// </summary>
+        /// <returns>
+        /// A 3d point in space.
+        /// </returns>
         public SD_Point UpdateFromArray(double[] arr)
         {
             if (arr.Length < 3) throw new Exception("Array is too small. A minimum of 3 characters is required.");
@@ -85,11 +123,13 @@ namespace SD_Model.Geometry
         }
 
 
-
-        public bool Equals(SD_Point other)
-        {
-            throw new NotImplementedException();
-        }
+        /// <summary>
+        /// Calculates the distance between 2 points.
+        /// </summary>
+        /// <param name="other"> (SD_Point) The point to compare against.</param>
+        /// <returns>
+        /// The distance between the 2 points.
+        /// </returns>
 
         public double Distance(SD_Point other)
         {
@@ -97,24 +137,28 @@ namespace SD_Model.Geometry
         }
 
 
-
+        /// <summary>
+        /// Converts the point to a vector.
+        /// </summary>
+        /// <returns>
+        /// The vector generated from the point.
+        /// </returns>
         public SD_Vector ToVector()
         {
 
-
-
             return new SD_Vector(X, Y, Z);
-
-
         }
 
-        public SD_Vector VectorToPoint(SD_Point other)
-        {
-
-            return ToVector() - other.ToVector();
-
-        }
-
+        /// <summary>
+        /// Checks whether 4 points lie within the same plane.
+        /// </summary>
+        /// <param name="point1"> (SD_Point) The point to check.</param>
+        /// <param name="point2"> (SD_Point) The point to check.</param>
+        /// <param name="point3"> (SD_Point) The point to check.</param>
+        /// <param name="point4"> (SD_Point) The point to check.</param>
+        /// <returns>
+        /// 'True' if the points lie on the same plane.
+        /// </returns>
         public bool Planar4Points(SD_Point point1, SD_Point point2, SD_Point point3, SD_Point point4)
         {
 
@@ -125,6 +169,15 @@ namespace SD_Model.Geometry
             return SD_Vector.Coplanar(vec1, vec2, vec3);
         }
 
+        /// <summary>
+        /// Calcualtes the area of a triangle defined by 3 points.
+        /// </summary>
+        /// <param name="point1"> (SD_Point) The point to check.</param>
+        /// <param name="point2"> (SD_Point) The point to check.</param>
+        /// <param name="point3"> (SD_Point) The point to check.</param>
+        /// <returns>
+        /// Area between the points.
+        /// </returns>
         public double Area3Points(SD_Point point1, SD_Point point2, SD_Point point3)
         {
 
@@ -154,9 +207,15 @@ namespace SD_Model.Geometry
 
         }
 
+        /// <summary>
+        /// Moves a point by a given translation.
+        /// </summary>
+        /// <param name="translation"> (SD_Vector) The translation vector of the point.</param>
+        /// <returns>
+        /// The moved point.
+        /// </returns>
         public SD_Point Move(SD_Vector translation)
         {
-
             return this + translation;
         }
 
