@@ -3,7 +3,7 @@ The goal behind this project is to create a self-contained (does not rely on any
 
 This library was built using .Net Standard, so it is usable in .Net 5 and all later versions (for reference: https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0).
 
-This is currently still work-in-progress and in its early phases so any contributions or input would be welcome.
+_For more information on the project structure, please refer to the [Documentation](https://github.com/nicbencini/SD_Vector/tree/main/docs)_.
 
 # Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
