@@ -11,10 +11,7 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,6 +23,7 @@
   <td id="projectalign">
    <div id="projectname">SD_Vector
    </div>
+   <div id="projectbrief">The goal behind this project is to create a self-contained (does not rely on any external dependencies) vector library written in C# .NET Standard 2.1 to solve 3d geometry interactions.</div>
   </td>
  </tr>
  </tbody>
@@ -43,28 +41,18 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',false,false,'search.php','Search',true);
+  initMenu('',false,false,'search.php','Search',false);
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
+<div id="doc-content">
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('annotated.html',''); initResizable(true); });
+$(function(){ initResizable(false); });
 /* @license-end */
 </script>
-<div id="doc-content">
 <div class="header">
   <div class="headertitle"><div class="title">Class List</div></div>
 </div><!--header-->
@@ -73,21 +61,19 @@ $(function(){initNavTree('annotated.html',''); initResizable(true); });
 <div class="levels">[detail level <span onclick="javascript:dynsection.toggleLevel(1);">1</span><span onclick="javascript:dynsection.toggleLevel(2);">2</span><span onclick="javascript:dynsection.toggleLevel(3);">3</span>]</div><table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="dynsection.toggleFolder('0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespace_s_d___model.html" target="_self">SD_Model</a></td><td class="desc"></td></tr>
 <tr id="row_0_0_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_0_" class="arrow" onclick="dynsection.toggleFolder('0_0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespace_s_d___model_1_1_geometry.html" target="_self">Geometry</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___line.html" target="_self">SD_Line</a></td><td class="desc">Class <code><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___line.html" title="Class SD_Line Class for creating a 3D line.">SD_Line</a></code> Class for creating a 3D line </td></tr>
-<tr id="row_0_0_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" target="_self">SD_Point</a></td><td class="desc">Class <code><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a></code> Class for creating a 3D point </td></tr>
+<tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___line.html" target="_self">SD_Line</a></td><td class="desc"><code><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___line.html" title="SD_Line Class for creating a 3D line.">SD_Line</a></code> Class for creating a 3D line </td></tr>
+<tr id="row_0_0_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" target="_self">SD_Point</a></td><td class="desc"><code><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a></code> Class for creating a 3D point </td></tr>
 <tr id="row_0_1_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_1_" class="arrow" onclick="dynsection.toggleFolder('0_1_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><a class="el" href="namespace_s_d___model_1_1_vector.html" target="_self">Vector</a></td><td class="desc"></td></tr>
-<tr id="row_0_1_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___matrix.html" target="_self">SD_Matrix</a></td><td class="desc">Class <code><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___matrix.html" title="Class SD_Matrix Matrix library class.">SD_Matrix</a></code> Matrix library class </td></tr>
-<tr id="row_0_1_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html" target="_self">SD_Plane</a></td><td class="desc"></td></tr>
-<tr id="row_0_1_2_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" target="_self">SD_Vector</a></td><td class="desc"><a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> object </td></tr>
+<tr id="row_0_1_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___matrix.html" target="_self">SD_Matrix</a></td><td class="desc"><code><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___matrix.html" title="SD_Matrix Matrix library class.">SD_Matrix</a></code> Matrix library class </td></tr>
+<tr id="row_0_1_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html" target="_self">SD_Plane</a></td><td class="desc"><code><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html" title="SD_Plane Class for creating a 3D plane.">SD_Plane</a></code> Class for creating a 3D plane </td></tr>
+<tr id="row_0_1_2_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" target="_self">SD_Vector</a></td><td class="desc"><code><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html" title="SD_Plane Class for creating a 3D plane.">SD_Plane</a></code> Class for creating a 3D plane </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
 </body>
 </html>

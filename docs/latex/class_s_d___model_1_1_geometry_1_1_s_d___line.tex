@@ -1,0 +1,252 @@
+\doxysection{SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line Class Reference}
+\label{class_s_d___model_1_1_geometry_1_1_s_d___line}\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+
+
+{\ttfamily \doxyref{SD\+\_\+\+Line}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___line}} Class for creating a 3D line.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ SD\+\_\+\+Line} (\textbf{ SD\+\_\+\+Point} pt1, \textbf{ SD\+\_\+\+Point} pt2)
+\begin{DoxyCompactList}\small\item\em Returns a 3D line from 2 points. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Line} (\textbf{ SD\+\_\+\+Point} pt1, \textbf{ SD\+\_\+\+Vector} vec1)
+\begin{DoxyCompactList}\small\item\em Returns a 3D line from a point and a vector. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representing the line. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point}[$\,$] \textbf{ To\+Array} ()
+\begin{DoxyCompactList}\small\item\em Returns an array representing the line. \end{DoxyCompactList}\item 
+double \textbf{ Length} ()
+\begin{DoxyCompactList}\small\item\em Returns the legth of the line. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ To\+Vector} ()
+\begin{DoxyCompactList}\small\item\em Returns a vector from the line. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point} \textbf{ Point\+On\+Line} (double t)
+\begin{DoxyCompactList}\small\item\em Returns a point on the line defined by parameter t where 0 is the Start\+Point and 1 is the End\+Point of the line. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point} \textbf{ Mid\+Point} ()
+\begin{DoxyCompactList}\small\item\em Returns a point at the mid point of the line. \end{DoxyCompactList}\item 
+bool \textbf{ Is\+Parallel} (\textbf{ SD\+\_\+\+Line} other)
+\begin{DoxyCompactList}\small\item\em Checks whether the line is parallel to another line. \end{DoxyCompactList}\item 
+bool \textbf{ Is\+Point\+On\+Line} (\textbf{ SD\+\_\+\+Point} point)
+\begin{DoxyCompactList}\small\item\em Checks whether a defined point is on the line. \end{DoxyCompactList}\item 
+double? \textbf{ Get\+Parameter} (\textbf{ SD\+\_\+\+Point} point)
+\begin{DoxyCompactList}\small\item\em Returns the intersersection parameter t for a point on the line. \end{DoxyCompactList}\item 
+Tuple$<$ List$<$ \textbf{ SD\+\_\+\+Point} $>$, List$<$ double $>$ $>$ \textbf{ Divide} (double n)
+\begin{DoxyCompactList}\small\item\em Returns a list of division points on a line and their t paramaters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___line_abcaf11fac99c5f33f6e8a184b3fa0242} 
+\textbf{ SD\+\_\+\+Point} {\bfseries Start\+Point}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___line_a71ea68aa7450e80baec4848cf5b31859} 
+\textbf{ SD\+\_\+\+Point} {\bfseries End\+Point}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \doxyref{SD\+\_\+\+Line}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___line}} Class for creating a 3D line. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!SD\_Line@{SD\_Line}}
+\index{SD\_Line@{SD\_Line}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{SD\_Line()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_ae839788d5da313ea3169f18ed8aeed4f} 
+SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+SD\+\_\+\+Line (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{pt1}{, }\item[{\textbf{ SD\+\_\+\+Point}}]{pt2}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D line from 2 points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt1} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The start point of the line.\\
+\hline
+{\em pt2} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The end point of the line.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A line in 3D space connecting the 2 points. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!SD\_Line@{SD\_Line}}
+\index{SD\_Line@{SD\_Line}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{SD\_Line()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_abffe54290928e4c4f08c6405126984bd} 
+SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+SD\+\_\+\+Line (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{pt1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vec1}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D line from a point and a vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt1} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The start point of the line.\\
+\hline
+{\em vec1} & (SD\+\_\+\+Vector) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining direction of the line.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A line in 3D space connecting the 2 points. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!Divide@{Divide}}
+\index{Divide@{Divide}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{Divide()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_a94e0bcc309ebbf21eaab9790bc86c51e} 
+Tuple$<$ List$<$ \textbf{ SD\+\_\+\+Point} $>$, List$<$ double $>$ $>$ SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+Divide (\begin{DoxyParamCaption}\item[{double}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Returns a list of division points on a line and their t paramaters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & (Double) The number of divisions of the line.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The divisions of the line. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!GetParameter@{GetParameter}}
+\index{GetParameter@{GetParameter}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{GetParameter()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_a767277ba222235821e66a0c9e4416573} 
+double? SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+Get\+Parameter (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{point}{}\end{DoxyParamCaption})}
+
+
+
+Returns the intersersection parameter t for a point on the line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parameter t representing the location on the line. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!IsParallel@{IsParallel}}
+\index{IsParallel@{IsParallel}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{IsParallel()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_ad2a76256657976cbaa9a25dbd9354497} 
+bool SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+Is\+Parallel (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Line}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether the line is parallel to another line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Line}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___line}) The other line to compare against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}True\textquotesingle{} if the lines are parallel and \textquotesingle{}False\textquotesingle{} if not. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!IsPointOnLine@{IsPointOnLine}}
+\index{IsPointOnLine@{IsPointOnLine}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{IsPointOnLine()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_a72c44116f00ce9d29af2aae242c38a08} 
+bool SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+Is\+Point\+On\+Line (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{point}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether a defined point is on the line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}True\textquotesingle{} if point is on line and \textquotesingle{}False\textquotesingle{} if not. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!Length@{Length}}
+\index{Length@{Length}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{Length()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_a1264e1d29a805564e6333fda8941a758} 
+double SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the legth of the line. 
+
+\begin{DoxyReturn}{Returns}
+The length of the line. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!MidPoint@{MidPoint}}
+\index{MidPoint@{MidPoint}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{MidPoint()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_af909fefff828137c904dd08cb707fb24} 
+\textbf{ SD\+\_\+\+Point} SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+Mid\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a point at the mid point of the line. 
+
+\begin{DoxyReturn}{Returns}
+A point representing the mid point of the line. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!PointOnLine@{PointOnLine}}
+\index{PointOnLine@{PointOnLine}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{PointOnLine()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_a8997d9d5fe82942b28949ff14b084566} 
+\textbf{ SD\+\_\+\+Point} SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+Point\+On\+Line (\begin{DoxyParamCaption}\item[{double}]{t}{}\end{DoxyParamCaption})}
+
+
+
+Returns a point on the line defined by parameter t where 0 is the Start\+Point and 1 is the End\+Point of the line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & (double) Parameter t ranging from 0 (start point) to 1 (end point).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A point on the line. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{ToArray()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_a1415f7322feb374fcb58a0932e2a7dfa} 
+\textbf{ SD\+\_\+\+Point}[$\,$] SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+To\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns an array representing the line. 
+
+\begin{DoxyReturn}{Returns}
+An array representing the line. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!ToString@{ToString}}
+\index{ToString@{ToString}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_ae408a0059f282c9d5e571d958cc1d960} 
+override string SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representing the line. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the line. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}!ToVector@{ToVector}}
+\index{ToVector@{ToVector}!SD\_Model.Geometry.SD\_Line@{SD\_Model.Geometry.SD\_Line}}
+\doxysubsubsection{ToVector()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___line_a927c86cef31c4d2b02d0daad620a4ef8} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Line.\+To\+Vector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a vector from the line. 
+
+\begin{DoxyReturn}{Returns}
+A vector representing the length and direction of the line. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Geometry/SD\+\_\+\+Line.\+cs\end{DoxyCompactItemize}

@@ -6,7 +6,7 @@ using SD_Model.Vector;
 namespace SD_Model.Geometry
 {
     /// <summary>
-    /// Class <c>SD_Point</c> 
+    /// <c>SD_Point</c> 
     /// Class for creating a 3D point.
     /// </summary>
     public class SD_Point 
@@ -18,7 +18,7 @@ namespace SD_Model.Geometry
         /// <summary>
         /// Returns a 3D point from a double.
         /// </summary>
-        /// <param name="value"> (double) The value for the x,y and z coordinate of the line.</param>
+        /// <param name="value"> (double) The value for the x,y and z coordinate of the point.</param>
         /// <returns>
         /// A 3D point in space.
         /// </returns>
@@ -33,9 +33,9 @@ namespace SD_Model.Geometry
         /// <summary>
         /// Returns a 3D point from a 3 doubles.
         /// </summary>
-        /// <param name="x"> (double) The value for the x coordinate of the line.</param>
-        /// <param name="y"> (double) The value for the y coordinate of the line.</param>
-        /// <param name="z"> (double) The value for the z coordinate of the line.</param>
+        /// <param name="x"> (double) The value for the x coordinate of the point.</param>
+        /// <param name="y"> (double) The value for the y coordinate of the point.</param>
+        /// <param name="z"> (double) The value for the z coordinate of the point.</param>
         /// <returns>
         /// A 3D point in space.
         /// </returns>

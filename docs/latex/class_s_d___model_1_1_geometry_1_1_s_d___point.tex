@@ -1,0 +1,327 @@
+\doxysection{SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point Class Reference}
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point}\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+
+
+{\ttfamily \doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}} Class for creating a 3D point.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ SD\+\_\+\+Point} (double value)
+\begin{DoxyCompactList}\small\item\em Returns a 3D point from a double. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Returns a 3D point from a 3 doubles. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point} (\textbf{ SD\+\_\+\+Vector} vector)
+\begin{DoxyCompactList}\small\item\em Returns a 3D point from vector. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point} (double[$\,$] arr)
+\begin{DoxyCompactList}\small\item\em Returns a 3D point from an array. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representing the point. \end{DoxyCompactList}\item 
+double[$\,$] \textbf{ To\+Array} ()
+\begin{DoxyCompactList}\small\item\em Returns an array representing the point. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point} \textbf{ Update\+From\+Array} (double[$\,$] arr)
+\begin{DoxyCompactList}\small\item\em Updates a points coordinates from an array. \end{DoxyCompactList}\item 
+double \textbf{ Distance} (\textbf{ SD\+\_\+\+Point} other)
+\begin{DoxyCompactList}\small\item\em Calculates the distance between 2 points. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ To\+Vector} ()
+\begin{DoxyCompactList}\small\item\em Converts the point to a vector. \end{DoxyCompactList}\item 
+bool \textbf{ Planar4\+Points} (\textbf{ SD\+\_\+\+Point} point1, \textbf{ SD\+\_\+\+Point} point2, \textbf{ SD\+\_\+\+Point} point3, \textbf{ SD\+\_\+\+Point} point4)
+\begin{DoxyCompactList}\small\item\em Checks whether 4 points lie within the same plane. \end{DoxyCompactList}\item 
+double \textbf{ Area3\+Points} (\textbf{ SD\+\_\+\+Point} point1, \textbf{ SD\+\_\+\+Point} point2, \textbf{ SD\+\_\+\+Point} point3)
+\begin{DoxyCompactList}\small\item\em Calcualtes the area of a triangle defined by 3 points. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point} \textbf{ Move} (\textbf{ SD\+\_\+\+Vector} translation)
+\begin{DoxyCompactList}\small\item\em Moves a point by a given translation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a6b83245853e4f8dfae695b6fca36f253} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries Average} (List$<$ \textbf{ SD\+\_\+\+Point} $>$ point\+List)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_aa663b782e1343bd65e9011ebdf3ac039} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator+} (\textbf{ SD\+\_\+\+Point} left, double value)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a3f8e927639510691711c07d065243546} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator+} (double value, \textbf{ SD\+\_\+\+Point} left)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a1a2d8b2f5ff20dd286f2928e1975bbce} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator+} (\textbf{ SD\+\_\+\+Point} left, \textbf{ SD\+\_\+\+Point} right)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a8a87eba036fde171ff6ffe406102427e} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator+} (\textbf{ SD\+\_\+\+Point} left, \textbf{ SD\+\_\+\+Vector} right)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a1cece34ac0febc89c73c9038c2bcd1e5} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Point} left)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_ab349a03fe5ad6f9604567a1f63d3b3f5} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Point} left, double value)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_ac3bc8c45eada35783262f0dcffc15cea} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator-\/} (double value, \textbf{ SD\+\_\+\+Point} left)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a963183e09fb22d8433b6c326175aaa45} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Point} left, \textbf{ SD\+\_\+\+Point} right)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a83dfac39dcc0f27f5f5322f9ae5f32c6} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Point} left, \textbf{ SD\+\_\+\+Vector} right)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_affc554e8a93f2b18a5c28fc06918abb9} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator/} (\textbf{ SD\+\_\+\+Point} left, double value)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a867e28fca2ee9aff80a021938c9a0708} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator/} (double value, \textbf{ SD\+\_\+\+Point} left)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_af0be062e5478f5169504dc8fc99ad413} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator/} (\textbf{ SD\+\_\+\+Point} left, \textbf{ SD\+\_\+\+Point} right)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_af9f6daedc94ad77001eb65efe99a6976} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator/} (\textbf{ SD\+\_\+\+Point} left, \textbf{ SD\+\_\+\+Vector} right)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a4a96e42ae6374551398fa8faed243007} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator$\ast$} (\textbf{ SD\+\_\+\+Point} left, double value)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_af9e614bb2f649373bd1645d8e9448af4} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator$\ast$} (double value, \textbf{ SD\+\_\+\+Point} left)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a70ff316a4b542aec2ab2b0a3f02ff0f4} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator$\ast$} (\textbf{ SD\+\_\+\+Point} left, \textbf{ SD\+\_\+\+Point} right)
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a17414a926672bfe40cc9a69a2463641e} 
+static \textbf{ SD\+\_\+\+Point} {\bfseries operator$\ast$} (\textbf{ SD\+\_\+\+Point} left, \textbf{ SD\+\_\+\+Vector} right)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a4d8e29a23f48838098fdf176c51eead4} 
+double {\bfseries X}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a5f83836a6fb09665c79a95c96db459d6} 
+double {\bfseries Y}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_geometry_1_1_s_d___point_a3b01ed027b631a98e1ff13a802f94aca} 
+double {\bfseries Z}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}} Class for creating a 3D point. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!SD\_Point@{SD\_Point}}
+\index{SD\_Point@{SD\_Point}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{SD\_Point()\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_a118a5e6f467d12ae9b2420e9b89581d8} 
+SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+SD\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D point from a double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & (double) The value for the x,y and z coordinate of the point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3D point in space. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!SD\_Point@{SD\_Point}}
+\index{SD\_Point@{SD\_Point}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{SD\_Point()\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_a83e83e53c46e45f7fd43856daa9de9f9} 
+SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+SD\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{, }\item[{double}]{z}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D point from a 3 doubles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & (double) The value for the x coordinate of the point.\\
+\hline
+{\em y} & (double) The value for the y coordinate of the point.\\
+\hline
+{\em z} & (double) The value for the z coordinate of the point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3D point in space. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!SD\_Point@{SD\_Point}}
+\index{SD\_Point@{SD\_Point}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{SD\_Point()\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_aab3e6db562e0996e2cf9c7b28112115e} 
+SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+SD\+\_\+\+Point (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D point from vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & (SD\+\_\+\+Vector) A vector from which to generate the point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3D point in space. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!SD\_Point@{SD\_Point}}
+\index{SD\_Point@{SD\_Point}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{SD\_Point()\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_a1aad841d7d19e653d2ecee2d3840f076} 
+SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+SD\+\_\+\+Point (\begin{DoxyParamCaption}\item[{double[$\,$]}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D point from an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & (double[]) A array containing the x,y and z coordinates.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3d point in space. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!Area3Points@{Area3Points}}
+\index{Area3Points@{Area3Points}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{Area3Points()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_acd6de7453db880811cb6d9d6fc176177} 
+double SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+Area3\+Points (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{point1}{, }\item[{\textbf{ SD\+\_\+\+Point}}]{point2}{, }\item[{\textbf{ SD\+\_\+\+Point}}]{point3}{}\end{DoxyParamCaption})}
+
+
+
+Calcualtes the area of a triangle defined by 3 points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point1} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check.\\
+\hline
+{\em point2} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check.\\
+\hline
+{\em point3} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Area between the points. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!Distance@{Distance}}
+\index{Distance@{Distance}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{Distance()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_a1f6c4ae16705cc370fa13beb9c55564a} 
+double SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+Distance (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the distance between 2 points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to compare against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance between the 2 points. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!Move@{Move}}
+\index{Move@{Move}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{Move()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_ac208536ef7b392ac516894b9ebb404b5} 
+\textbf{ SD\+\_\+\+Point} SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+Move (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{translation}{}\end{DoxyParamCaption})}
+
+
+
+Moves a point by a given translation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em translation} & (SD\+\_\+\+Vector) The translation vector of the point.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The moved point. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!Planar4Points@{Planar4Points}}
+\index{Planar4Points@{Planar4Points}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{Planar4Points()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_a1c3736534d17f666b643c998d73e62b8} 
+bool SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+Planar4\+Points (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{point1}{, }\item[{\textbf{ SD\+\_\+\+Point}}]{point2}{, }\item[{\textbf{ SD\+\_\+\+Point}}]{point3}{, }\item[{\textbf{ SD\+\_\+\+Point}}]{point4}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether 4 points lie within the same plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point1} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check.\\
+\hline
+{\em point2} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check.\\
+\hline
+{\em point3} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check.\\
+\hline
+{\em point4} & (\doxyref{SD\+\_\+\+Point}{p.}{class_s_d___model_1_1_geometry_1_1_s_d___point}) The point to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}True\textquotesingle{} if the points lie on the same plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{ToArray()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_af1bb58faa151251fbc65d71c7651b71f} 
+double[$\,$] SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+To\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns an array representing the point. 
+
+\begin{DoxyReturn}{Returns}
+An array representing the 3d point. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!ToString@{ToString}}
+\index{ToString@{ToString}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_aa7d71321002c580396d32071f002d0c2} 
+override string SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representing the point. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the 3d point. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!ToVector@{ToVector}}
+\index{ToVector@{ToVector}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{ToVector()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_ab7a89413d71a58ea415615854d886be8} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+To\+Vector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Converts the point to a vector. 
+
+\begin{DoxyReturn}{Returns}
+The vector generated from the point. 
+\end{DoxyReturn}
+\index{SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}!UpdateFromArray@{UpdateFromArray}}
+\index{UpdateFromArray@{UpdateFromArray}!SD\_Model.Geometry.SD\_Point@{SD\_Model.Geometry.SD\_Point}}
+\doxysubsubsection{UpdateFromArray()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_geometry_1_1_s_d___point_a01c984f30a9be593d29c128ed9ff545d} 
+\textbf{ SD\+\_\+\+Point} SD\+\_\+\+Model.\+Geometry.\+SD\+\_\+\+Point.\+Update\+From\+Array (\begin{DoxyParamCaption}\item[{double[$\,$]}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Updates a points coordinates from an array. 
+
+\begin{DoxyReturn}{Returns}
+A 3d point in space. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Geometry/SD\+\_\+\+Point.\+cs\end{DoxyCompactItemize}

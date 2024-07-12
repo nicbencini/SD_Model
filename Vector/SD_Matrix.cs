@@ -4,7 +4,7 @@
 namespace SD_Model.Vector
 {
     /// <summary>
-    /// Class <c>SD_Matrix</c> 
+    /// <c>SD_Matrix</c> 
     /// Matrix library class.
     /// </summary>
     public class SD_Matrix

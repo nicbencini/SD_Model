@@ -1,0 +1,324 @@
+\doxysection{SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane Class Reference}
+\label{class_s_d___model_1_1_vector_1_1_s_d___plane}\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+
+
+{\ttfamily \doxyref{SD\+\_\+\+Plane}{p.}{class_s_d___model_1_1_vector_1_1_s_d___plane}} Class for creating a 3D plane.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ SD\+\_\+\+Plane} (\textbf{ SD\+\_\+\+Vector} origin, \textbf{ SD\+\_\+\+Vector} x\+Vector, \textbf{ SD\+\_\+\+Vector} y\+Vector, \textbf{ SD\+\_\+\+Vector} z\+Vector)
+\begin{DoxyCompactList}\small\item\em Creates a 3d plane from the origin point and 3 vectors. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Plane} (\textbf{ SD\+\_\+\+Point} origin, \textbf{ SD\+\_\+\+Vector} x\+Axis, \textbf{ SD\+\_\+\+Vector} y\+Axis)
+\begin{DoxyCompactList}\small\item\em Creates a 3d plane from the origin point and 2 vectors. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Plane} (\textbf{ SD\+\_\+\+Point} pt1, \textbf{ SD\+\_\+\+Point} pt2, \textbf{ SD\+\_\+\+Point} pt3)
+\begin{DoxyCompactList}\small\item\em Creates a 3d plane from 3 points. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Plane} (\textbf{ SD\+\_\+\+Point} origin, \textbf{ SD\+\_\+\+Vector} normal)
+\begin{DoxyCompactList}\small\item\em Creates a 3d plane from an origin point and a normal vector. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Plane} (\textbf{ SD\+\_\+\+Line} line, \textbf{ SD\+\_\+\+Vector} orientation\+Vector, bool x\+Axis\+Oriented\+To\+Line=false)
+\begin{DoxyCompactList}\small\item\em Creates a 3d plane from a line and an oreination vector. \end{DoxyCompactList}\item 
+double \textbf{ a\+Value} ()
+\begin{DoxyCompactList}\small\item\em Retrurns parameter \textquotesingle{}a\textquotesingle{} of the plane as defined by the plane equation ax + by + cz + d = 0. \end{DoxyCompactList}\item 
+double \textbf{ b\+Value} ()
+\begin{DoxyCompactList}\small\item\em Retrurns parameter \textquotesingle{}b\textquotesingle{} of the plane as defined by the plane equation ax + by + cz + d = 0. \end{DoxyCompactList}\item 
+double \textbf{ c\+Value} ()
+\begin{DoxyCompactList}\small\item\em Retrurns parameter \textquotesingle{}c\textquotesingle{} of the plane as defined by the plane equation ax + by + cz + d = 0. \end{DoxyCompactList}\item 
+double \textbf{ d\+Value} ()
+\begin{DoxyCompactList}\small\item\em Retrurns parameter \textquotesingle{}d\textquotesingle{} of the plane as defined by the plane equation ax + by + cz + d = 0. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Matrix} \textbf{ To\+Rotation\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Converts the plane to a rotation matrix. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representing the plane. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector}[$\,$] \textbf{ To\+Array} ()
+\begin{DoxyCompactList}\small\item\em Returns an array representing the plane. \end{DoxyCompactList}\item 
+string[$\,$] \textbf{ To\+String\+Array} ()
+\begin{DoxyCompactList}\small\item\em Returns a string array representing the plane. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Plane} \textbf{ XY} ()
+\begin{DoxyCompactList}\small\item\em Returns a plane defined by the global x-\/axis and y-\/axis. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Plane} \textbf{ YZ} ()
+\begin{DoxyCompactList}\small\item\em Returns a plane defined by the global y-\/axis and z-\/axis. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Plane} \textbf{ XZ} ()
+\begin{DoxyCompactList}\small\item\em Returns a plane defined by the global x-\/axis and z-\/axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___plane_ac1a1b9b93de00da501546b84aca49929} 
+\textbf{ SD\+\_\+\+Vector} {\bfseries Origin}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___plane_a1a6ea66b73a31dc12b10f4d8f850de01} 
+\textbf{ SD\+\_\+\+Vector} {\bfseries XVector}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___plane_aafea92a88a66b27a1b10482c1c874707} 
+\textbf{ SD\+\_\+\+Vector} {\bfseries YVector}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___plane_a1aca88ac0aa73b15ce62677f4c525717} 
+\textbf{ SD\+\_\+\+Vector} {\bfseries ZVector}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \doxyref{SD\+\_\+\+Plane}{p.}{class_s_d___model_1_1_vector_1_1_s_d___plane}} Class for creating a 3D plane. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!SD\_Plane@{SD\_Plane}}
+\index{SD\_Plane@{SD\_Plane}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{SD\_Plane()\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a3dbd53ab10523df7ac31f03f8fcbf5d1} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+SD\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{origin}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{x\+Vector}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{y\+Vector}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{z\+Vector}{}\end{DoxyParamCaption})}
+
+
+
+Creates a 3d plane from the origin point and 3 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining the origin point of the plane.\\
+\hline
+{\em x\+Vector} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining the x-\/axis of the plane.\\
+\hline
+{\em y\+Vector} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining the y-\/axis of the plane.\\
+\hline
+{\em z\+Vector} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining the z-\/axis of the plane.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The defined 3d plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!SD\_Plane@{SD\_Plane}}
+\index{SD\_Plane@{SD\_Plane}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{SD\_Plane()\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_aeab9d32587b02aa2f7284681b714d8b0} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+SD\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{origin}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{x\+Axis}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{y\+Axis}{}\end{DoxyParamCaption})}
+
+
+
+Creates a 3d plane from the origin point and 2 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining the origin point of the plane.\\
+\hline
+{\em x\+Axis} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining the x-\/axis of the plane.\\
+\hline
+{\em y\+Axis} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining the y-\/axis of the plane.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The defined 3d plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!SD\_Plane@{SD\_Plane}}
+\index{SD\_Plane@{SD\_Plane}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{SD\_Plane()\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a316ac7e4ab140f497e123da76dfd09e9} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+SD\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{pt1}{, }\item[{\textbf{ SD\+\_\+\+Point}}]{pt2}{, }\item[{\textbf{ SD\+\_\+\+Point}}]{pt3}{}\end{DoxyParamCaption})}
+
+
+
+Creates a 3d plane from 3 points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt1} & (SD\+\_\+\+Point) Point defining the origin point of the plane.\\
+\hline
+{\em pt2} & (SD\+\_\+\+Point)) First point that lies on plane.\\
+\hline
+{\em pt3} & (SD\+\_\+\+Point)) Second point that lies on plane.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The defined 3d plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!SD\_Plane@{SD\_Plane}}
+\index{SD\_Plane@{SD\_Plane}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{SD\_Plane()\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a222e3fb219d63e1c3c8ab0c68240a1e7} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+SD\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{origin}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{normal}{}\end{DoxyParamCaption})}
+
+
+
+Creates a 3d plane from an origin point and a normal vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & (SD\+\_\+\+Point) Point defining the origin point of the plane.\\
+\hline
+{\em normal} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector})) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining normal orientation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The defined 3d plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!SD\_Plane@{SD\_Plane}}
+\index{SD\_Plane@{SD\_Plane}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{SD\_Plane()\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a41dd39d1d30fbb1e9e83511dfdde4e56} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+SD\+\_\+\+Plane (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Line}}]{line}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{orientation\+Vector}{, }\item[{bool}]{x\+Axis\+Oriented\+To\+Line}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+
+Creates a 3d plane from a line and an oreination vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & (SD\+\_\+\+Line) A line definig the x-\/axis ot y-\/axis of the plane.\\
+\hline
+{\em orientation\+Vector} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector})) \doxyref{Vector}{p.}{namespace_s_d___model_1_1_vector} defining normal orientation.\\
+\hline
+{\em x\+Axis\+Oriented\+To\+Line} & (bool)) If \textquotesingle{}true\textquotesingle{}, the x-\/axis will be orientated to the line, else the y-\/axis will be orientated to the line\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The defined 3d plane. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!aValue@{aValue}}
+\index{aValue@{aValue}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{aValue()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_ac94915d8433861f8ce4d45c487207cb7} 
+double SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+a\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrurns parameter \textquotesingle{}a\textquotesingle{} of the plane as defined by the plane equation ax + by + cz + d = 0. 
+
+\begin{DoxyReturn}{Returns}
+The \textquotesingle{}a\textquotesingle{} parameter of the plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!bValue@{bValue}}
+\index{bValue@{bValue}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{bValue()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a8ed4c718599eae29924e0a53375b3144} 
+double SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+b\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrurns parameter \textquotesingle{}b\textquotesingle{} of the plane as defined by the plane equation ax + by + cz + d = 0. 
+
+\begin{DoxyReturn}{Returns}
+The \textquotesingle{}b\textquotesingle{} parameter of the plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!cValue@{cValue}}
+\index{cValue@{cValue}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{cValue()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a3a9222f1c178ccb7c52c6ee9a376a9dd} 
+double SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+c\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrurns parameter \textquotesingle{}c\textquotesingle{} of the plane as defined by the plane equation ax + by + cz + d = 0. 
+
+\begin{DoxyReturn}{Returns}
+The \textquotesingle{}c\textquotesingle{} parameter of the plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!dValue@{dValue}}
+\index{dValue@{dValue}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{dValue()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a7e24fa83a8bbc8c4f6a49d413a532086} 
+double SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+d\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retrurns parameter \textquotesingle{}d\textquotesingle{} of the plane as defined by the plane equation ax + by + cz + d = 0. 
+
+\begin{DoxyReturn}{Returns}
+The \textquotesingle{}d\textquotesingle{} parameter of the plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{ToArray()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_af50b591c0e0469c7135845d5c6f03f7e} 
+\textbf{ SD\+\_\+\+Vector}[$\,$] SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+To\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns an array representing the plane. 
+
+\begin{DoxyReturn}{Returns}
+An array representing the plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!ToRotationMatrix@{ToRotationMatrix}}
+\index{ToRotationMatrix@{ToRotationMatrix}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{ToRotationMatrix()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_adc0fbfd5f060c4d2125b47c84d538596} 
+\textbf{ SD\+\_\+\+Matrix} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+To\+Rotation\+Matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Converts the plane to a rotation matrix. 
+
+\begin{DoxyReturn}{Returns}
+The rotation matrix for the plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!ToString@{ToString}}
+\index{ToString@{ToString}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a4eecd1e4c6930a6b618ba90c8f898cc0} 
+override string SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representing the plane. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!ToStringArray@{ToStringArray}}
+\index{ToStringArray@{ToStringArray}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{ToStringArray()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_aa324ed056c5cbd26ba3580c5432bbeb7} 
+string[$\,$] SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+To\+String\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string array representing the plane. 
+
+\begin{DoxyReturn}{Returns}
+A string array representing the plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!XY@{XY}}
+\index{XY@{XY}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{XY()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_ab0d17c34be3cad2ce7fe063d64331b08} 
+\textbf{ SD\+\_\+\+Plane} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+XY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a plane defined by the global x-\/axis and y-\/axis. 
+
+\begin{DoxyReturn}{Returns}
+The resulting x-\/y plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!XZ@{XZ}}
+\index{XZ@{XZ}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{XZ()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a2b0cb38028ed97f7c991553034f17134} 
+\textbf{ SD\+\_\+\+Plane} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+XZ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a plane defined by the global x-\/axis and z-\/axis. 
+
+\begin{DoxyReturn}{Returns}
+The resulting x-\/z plane. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}!YZ@{YZ}}
+\index{YZ@{YZ}!SD\_Model.Vector.SD\_Plane@{SD\_Model.Vector.SD\_Plane}}
+\doxysubsubsection{YZ()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___plane_a60c06040ae1b2136dbdc3ae693a3c894} 
+\textbf{ SD\+\_\+\+Plane} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Plane.\+YZ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a plane defined by the global y-\/axis and z-\/axis. 
+
+\begin{DoxyReturn}{Returns}
+The resulting y-\/z plane. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vector/SD\+\_\+\+Plane.\+cs\end{DoxyCompactItemize}

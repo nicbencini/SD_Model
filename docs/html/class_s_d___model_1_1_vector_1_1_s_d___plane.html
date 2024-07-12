@@ -11,10 +11,7 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,6 +23,7 @@
   <td id="projectalign">
    <div id="projectname">SD_Vector
    </div>
+   <div id="projectbrief">The goal behind this project is to create a self-contained (does not rely on any external dependencies) vector library written in C# .NET Standard 2.1 to solve 3d geometry interactions.</div>
   </td>
  </tr>
  </tbody>
@@ -43,27 +41,21 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',false,false,'search.php','Search',true);
+  initMenu('',false,false,'search.php','Search',false);
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('class_s_d___model_1_1_vector_1_1_s_d___plane.html',''); initResizable(true); });
+$(function(){ initResizable(false); });
 /* @license-end */
 </script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_s_d___model.html">SD_Model</a></li><li class="navelem"><a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a></li><li class="navelem"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
@@ -73,56 +65,59 @@ $(function(){initNavTree('class_s_d___model_1_1_vector_1_1_s_d___plane.html','')
   <div class="headertitle"><div class="title">SD_Model.Vector.SD_Plane Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html" title="SD_Plane Class for creating a 3D plane.">SD_Plane</a></code> Class for creating a 3D plane.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3dbd53ab10523df7ac31f03f8fcbf5d1" id="r_a3dbd53ab10523df7ac31f03f8fcbf5d1"><td class="memItemLeft" align="right" valign="top"><a id="a3dbd53ab10523df7ac31f03f8fcbf5d1" name="a3dbd53ab10523df7ac31f03f8fcbf5d1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Plane</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> origin, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> xVector, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> yVector, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> zVector)</td></tr>
+<tr class="memitem:a3dbd53ab10523df7ac31f03f8fcbf5d1" id="r_a3dbd53ab10523df7ac31f03f8fcbf5d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3dbd53ab10523df7ac31f03f8fcbf5d1">SD_Plane</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> origin, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> xVector, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> yVector, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> zVector)</td></tr>
+<tr class="memdesc:a3dbd53ab10523df7ac31f03f8fcbf5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 3d plane from the origin point and 3 vectors.  <br /></td></tr>
 <tr class="separator:a3dbd53ab10523df7ac31f03f8fcbf5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeab9d32587b02aa2f7284681b714d8b0" id="r_aeab9d32587b02aa2f7284681b714d8b0"><td class="memItemLeft" align="right" valign="top"><a id="aeab9d32587b02aa2f7284681b714d8b0" name="aeab9d32587b02aa2f7284681b714d8b0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Plane</b> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> origin, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> xAxis, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> yAxis)</td></tr>
+<tr class="memitem:aeab9d32587b02aa2f7284681b714d8b0" id="r_aeab9d32587b02aa2f7284681b714d8b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeab9d32587b02aa2f7284681b714d8b0">SD_Plane</a> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> origin, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> xAxis, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> yAxis)</td></tr>
+<tr class="memdesc:aeab9d32587b02aa2f7284681b714d8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 3d plane from the origin point and 2 vectors.  <br /></td></tr>
 <tr class="separator:aeab9d32587b02aa2f7284681b714d8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a316ac7e4ab140f497e123da76dfd09e9" id="r_a316ac7e4ab140f497e123da76dfd09e9"><td class="memItemLeft" align="right" valign="top"><a id="a316ac7e4ab140f497e123da76dfd09e9" name="a316ac7e4ab140f497e123da76dfd09e9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Plane</b> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> pt1, <a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> pt2, <a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> pt3)</td></tr>
+<tr class="memitem:a316ac7e4ab140f497e123da76dfd09e9" id="r_a316ac7e4ab140f497e123da76dfd09e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a316ac7e4ab140f497e123da76dfd09e9">SD_Plane</a> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> pt1, <a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> pt2, <a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> pt3)</td></tr>
+<tr class="memdesc:a316ac7e4ab140f497e123da76dfd09e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 3d plane from 3 points.  <br /></td></tr>
 <tr class="separator:a316ac7e4ab140f497e123da76dfd09e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a222e3fb219d63e1c3c8ab0c68240a1e7" id="r_a222e3fb219d63e1c3c8ab0c68240a1e7"><td class="memItemLeft" align="right" valign="top"><a id="a222e3fb219d63e1c3c8ab0c68240a1e7" name="a222e3fb219d63e1c3c8ab0c68240a1e7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Plane</b> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> origin, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> normal)</td></tr>
+<tr class="memitem:a222e3fb219d63e1c3c8ab0c68240a1e7" id="r_a222e3fb219d63e1c3c8ab0c68240a1e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a222e3fb219d63e1c3c8ab0c68240a1e7">SD_Plane</a> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> origin, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> normal)</td></tr>
+<tr class="memdesc:a222e3fb219d63e1c3c8ab0c68240a1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 3d plane from an origin point and a normal vector.  <br /></td></tr>
 <tr class="separator:a222e3fb219d63e1c3c8ab0c68240a1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41dd39d1d30fbb1e9e83511dfdde4e56" id="r_a41dd39d1d30fbb1e9e83511dfdde4e56"><td class="memItemLeft" align="right" valign="top"><a id="a41dd39d1d30fbb1e9e83511dfdde4e56" name="a41dd39d1d30fbb1e9e83511dfdde4e56"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Plane</b> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___line.html">SD_Line</a> line, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> orientationVector, bool xAxisOrientedToLine=false)</td></tr>
+<tr class="memitem:a41dd39d1d30fbb1e9e83511dfdde4e56" id="r_a41dd39d1d30fbb1e9e83511dfdde4e56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41dd39d1d30fbb1e9e83511dfdde4e56">SD_Plane</a> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___line.html">SD_Line</a> line, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> orientationVector, bool xAxisOrientedToLine=false)</td></tr>
+<tr class="memdesc:a41dd39d1d30fbb1e9e83511dfdde4e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 3d plane from a line and an oreination vector.  <br /></td></tr>
 <tr class="separator:a41dd39d1d30fbb1e9e83511dfdde4e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac94915d8433861f8ce4d45c487207cb7" id="r_ac94915d8433861f8ce4d45c487207cb7"><td class="memItemLeft" align="right" valign="top"><a id="ac94915d8433861f8ce4d45c487207cb7" name="ac94915d8433861f8ce4d45c487207cb7"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>aValue</b> ()</td></tr>
+<tr class="memitem:ac94915d8433861f8ce4d45c487207cb7" id="r_ac94915d8433861f8ce4d45c487207cb7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac94915d8433861f8ce4d45c487207cb7">aValue</a> ()</td></tr>
+<tr class="memdesc:ac94915d8433861f8ce4d45c487207cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrurns parameter 'a' of the plane as defined by the plane equation ax + by + cz + d = 0.  <br /></td></tr>
 <tr class="separator:ac94915d8433861f8ce4d45c487207cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed4c718599eae29924e0a53375b3144" id="r_a8ed4c718599eae29924e0a53375b3144"><td class="memItemLeft" align="right" valign="top"><a id="a8ed4c718599eae29924e0a53375b3144" name="a8ed4c718599eae29924e0a53375b3144"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>bValue</b> ()</td></tr>
+<tr class="memitem:a8ed4c718599eae29924e0a53375b3144" id="r_a8ed4c718599eae29924e0a53375b3144"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ed4c718599eae29924e0a53375b3144">bValue</a> ()</td></tr>
+<tr class="memdesc:a8ed4c718599eae29924e0a53375b3144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrurns parameter 'b' of the plane as defined by the plane equation ax + by + cz + d = 0.  <br /></td></tr>
 <tr class="separator:a8ed4c718599eae29924e0a53375b3144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a9222f1c178ccb7c52c6ee9a376a9dd" id="r_a3a9222f1c178ccb7c52c6ee9a376a9dd"><td class="memItemLeft" align="right" valign="top"><a id="a3a9222f1c178ccb7c52c6ee9a376a9dd" name="a3a9222f1c178ccb7c52c6ee9a376a9dd"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>cValue</b> ()</td></tr>
+<tr class="memitem:a3a9222f1c178ccb7c52c6ee9a376a9dd" id="r_a3a9222f1c178ccb7c52c6ee9a376a9dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a9222f1c178ccb7c52c6ee9a376a9dd">cValue</a> ()</td></tr>
+<tr class="memdesc:a3a9222f1c178ccb7c52c6ee9a376a9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrurns parameter 'c' of the plane as defined by the plane equation ax + by + cz + d = 0.  <br /></td></tr>
 <tr class="separator:a3a9222f1c178ccb7c52c6ee9a376a9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e24fa83a8bbc8c4f6a49d413a532086" id="r_a7e24fa83a8bbc8c4f6a49d413a532086"><td class="memItemLeft" align="right" valign="top"><a id="a7e24fa83a8bbc8c4f6a49d413a532086" name="a7e24fa83a8bbc8c4f6a49d413a532086"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>dValue</b> ()</td></tr>
+<tr class="memitem:a7e24fa83a8bbc8c4f6a49d413a532086" id="r_a7e24fa83a8bbc8c4f6a49d413a532086"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e24fa83a8bbc8c4f6a49d413a532086">dValue</a> ()</td></tr>
+<tr class="memdesc:a7e24fa83a8bbc8c4f6a49d413a532086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrurns parameter 'd' of the plane as defined by the plane equation ax + by + cz + d = 0.  <br /></td></tr>
 <tr class="separator:a7e24fa83a8bbc8c4f6a49d413a532086"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc0fbfd5f060c4d2125b47c84d538596" id="r_adc0fbfd5f060c4d2125b47c84d538596"><td class="memItemLeft" align="right" valign="top"><a id="adc0fbfd5f060c4d2125b47c84d538596" name="adc0fbfd5f060c4d2125b47c84d538596"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___matrix.html">SD_Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToRotationMatrix</b> ()</td></tr>
+<tr class="memitem:adc0fbfd5f060c4d2125b47c84d538596" id="r_adc0fbfd5f060c4d2125b47c84d538596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___matrix.html">SD_Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc0fbfd5f060c4d2125b47c84d538596">ToRotationMatrix</a> ()</td></tr>
+<tr class="memdesc:adc0fbfd5f060c4d2125b47c84d538596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the plane to a rotation matrix.  <br /></td></tr>
 <tr class="separator:adc0fbfd5f060c4d2125b47c84d538596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eecd1e4c6930a6b618ba90c8f898cc0" id="r_a4eecd1e4c6930a6b618ba90c8f898cc0"><td class="memItemLeft" align="right" valign="top"><a id="a4eecd1e4c6930a6b618ba90c8f898cc0" name="a4eecd1e4c6930a6b618ba90c8f898cc0"></a>
-override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="memitem:a4eecd1e4c6930a6b618ba90c8f898cc0" id="r_a4eecd1e4c6930a6b618ba90c8f898cc0"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eecd1e4c6930a6b618ba90c8f898cc0">ToString</a> ()</td></tr>
+<tr class="memdesc:a4eecd1e4c6930a6b618ba90c8f898cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representing the plane.  <br /></td></tr>
 <tr class="separator:a4eecd1e4c6930a6b618ba90c8f898cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af50b591c0e0469c7135845d5c6f03f7e" id="r_af50b591c0e0469c7135845d5c6f03f7e"><td class="memItemLeft" align="right" valign="top"><a id="af50b591c0e0469c7135845d5c6f03f7e" name="af50b591c0e0469c7135845d5c6f03f7e"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>ToArray</b> ()</td></tr>
+<tr class="memitem:af50b591c0e0469c7135845d5c6f03f7e" id="r_af50b591c0e0469c7135845d5c6f03f7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af50b591c0e0469c7135845d5c6f03f7e">ToArray</a> ()</td></tr>
+<tr class="memdesc:af50b591c0e0469c7135845d5c6f03f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array representing the plane.  <br /></td></tr>
 <tr class="separator:af50b591c0e0469c7135845d5c6f03f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa324ed056c5cbd26ba3580c5432bbeb7" id="r_aa324ed056c5cbd26ba3580c5432bbeb7"><td class="memItemLeft" align="right" valign="top"><a id="aa324ed056c5cbd26ba3580c5432bbeb7" name="aa324ed056c5cbd26ba3580c5432bbeb7"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>ToStringArray</b> ()</td></tr>
+<tr class="memitem:aa324ed056c5cbd26ba3580c5432bbeb7" id="r_aa324ed056c5cbd26ba3580c5432bbeb7"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa324ed056c5cbd26ba3580c5432bbeb7">ToStringArray</a> ()</td></tr>
+<tr class="memdesc:aa324ed056c5cbd26ba3580c5432bbeb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string array representing the plane.  <br /></td></tr>
 <tr class="separator:aa324ed056c5cbd26ba3580c5432bbeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0d17c34be3cad2ce7fe063d64331b08" id="r_ab0d17c34be3cad2ce7fe063d64331b08"><td class="memItemLeft" align="right" valign="top"><a id="ab0d17c34be3cad2ce7fe063d64331b08" name="ab0d17c34be3cad2ce7fe063d64331b08"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XY</b> ()</td></tr>
+<tr class="memitem:ab0d17c34be3cad2ce7fe063d64331b08" id="r_ab0d17c34be3cad2ce7fe063d64331b08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0d17c34be3cad2ce7fe063d64331b08">XY</a> ()</td></tr>
+<tr class="memdesc:ab0d17c34be3cad2ce7fe063d64331b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a plane defined by the global x-axis and y-axis.  <br /></td></tr>
 <tr class="separator:ab0d17c34be3cad2ce7fe063d64331b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60c06040ae1b2136dbdc3ae693a3c894" id="r_a60c06040ae1b2136dbdc3ae693a3c894"><td class="memItemLeft" align="right" valign="top"><a id="a60c06040ae1b2136dbdc3ae693a3c894" name="a60c06040ae1b2136dbdc3ae693a3c894"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><b>YZ</b> ()</td></tr>
+<tr class="memitem:a60c06040ae1b2136dbdc3ae693a3c894" id="r_a60c06040ae1b2136dbdc3ae693a3c894"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60c06040ae1b2136dbdc3ae693a3c894">YZ</a> ()</td></tr>
+<tr class="memdesc:a60c06040ae1b2136dbdc3ae693a3c894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a plane defined by the global y-axis and z-axis.  <br /></td></tr>
 <tr class="separator:a60c06040ae1b2136dbdc3ae693a3c894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0cb38028ed97f7c991553034f17134" id="r_a2b0cb38028ed97f7c991553034f17134"><td class="memItemLeft" align="right" valign="top"><a id="a2b0cb38028ed97f7c991553034f17134" name="a2b0cb38028ed97f7c991553034f17134"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XZ</b> ()</td></tr>
+<tr class="memitem:a2b0cb38028ed97f7c991553034f17134" id="r_a2b0cb38028ed97f7c991553034f17134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b0cb38028ed97f7c991553034f17134">XZ</a> ()</td></tr>
+<tr class="memdesc:a2b0cb38028ed97f7c991553034f17134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a plane defined by the global x-axis and z-axis.  <br /></td></tr>
 <tr class="separator:a2b0cb38028ed97f7c991553034f17134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
@@ -140,17 +135,423 @@ Properties</h2></td></tr>
 <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ZVector</b><code> [get, set]</code></td></tr>
 <tr class="separator:a1aca88ac0aa73b15ce62677f4c525717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><code><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html" title="SD_Plane Class for creating a 3D plane.">SD_Plane</a></code> Class for creating a 3D plane. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3dbd53ab10523df7ac31f03f8fcbf5d1" name="a3dbd53ab10523df7ac31f03f8fcbf5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dbd53ab10523df7ac31f03f8fcbf5d1">&#9670;&#160;</a></span>SD_Plane() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Plane.SD_Plane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>xVector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>yVector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>zVector</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a 3d plane from the origin point and 3 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining the origin point of the plane.</td></tr>
+    <tr><td class="paramname">xVector</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining the x-axis of the plane.</td></tr>
+    <tr><td class="paramname">yVector</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining the y-axis of the plane.</td></tr>
+    <tr><td class="paramname">zVector</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining the z-axis of the plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The defined 3d plane. </dd></dl>
+
+</div>
+</div>
+<a id="aeab9d32587b02aa2f7284681b714d8b0" name="aeab9d32587b02aa2f7284681b714d8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab9d32587b02aa2f7284681b714d8b0">&#9670;&#160;</a></span>SD_Plane() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Plane.SD_Plane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>xAxis</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>yAxis</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a 3d plane from the origin point and 2 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining the origin point of the plane.</td></tr>
+    <tr><td class="paramname">xAxis</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining the x-axis of the plane.</td></tr>
+    <tr><td class="paramname">yAxis</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining the y-axis of the plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The defined 3d plane. </dd></dl>
+
+</div>
+</div>
+<a id="a316ac7e4ab140f497e123da76dfd09e9" name="a316ac7e4ab140f497e123da76dfd09e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316ac7e4ab140f497e123da76dfd09e9">&#9670;&#160;</a></span>SD_Plane() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Plane.SD_Plane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a></td>          <td class="paramname"><span class="paramname"><em>pt1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a></td>          <td class="paramname"><span class="paramname"><em>pt2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a></td>          <td class="paramname"><span class="paramname"><em>pt3</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a 3d plane from 3 points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pt1</td><td>(SD_Point) Point defining the origin point of the plane.</td></tr>
+    <tr><td class="paramname">pt2</td><td>(SD_Point)) First point that lies on plane.</td></tr>
+    <tr><td class="paramname">pt3</td><td>(SD_Point)) Second point that lies on plane.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The defined 3d plane. </dd></dl>
+
+</div>
+</div>
+<a id="a222e3fb219d63e1c3c8ab0c68240a1e7" name="a222e3fb219d63e1c3c8ab0c68240a1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a222e3fb219d63e1c3c8ab0c68240a1e7">&#9670;&#160;</a></span>SD_Plane() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Plane.SD_Plane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a></td>          <td class="paramname"><span class="paramname"><em>origin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>normal</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a 3d plane from an origin point and a normal vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origin</td><td>(SD_Point) Point defining the origin point of the plane.</td></tr>
+    <tr><td class="paramname">normal</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>)) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining normal orientation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The defined 3d plane. </dd></dl>
+
+</div>
+</div>
+<a id="a41dd39d1d30fbb1e9e83511dfdde4e56" name="a41dd39d1d30fbb1e9e83511dfdde4e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41dd39d1d30fbb1e9e83511dfdde4e56">&#9670;&#160;</a></span>SD_Plane() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Plane.SD_Plane </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___line.html">SD_Line</a></td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>orientationVector</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>xAxisOrientedToLine</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a 3d plane from a line and an oreination vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>(SD_Line) A line definig the x-axis ot y-axis of the plane.</td></tr>
+    <tr><td class="paramname">orientationVector</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>)) <a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> defining normal orientation.</td></tr>
+    <tr><td class="paramname">xAxisOrientedToLine</td><td>(bool)) If 'true', the x-axis will be orientated to the line, else the y-axis will be orientated to the line</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The defined 3d plane. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac94915d8433861f8ce4d45c487207cb7" name="ac94915d8433861f8ce4d45c487207cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94915d8433861f8ce4d45c487207cb7">&#9670;&#160;</a></span>aValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SD_Model.Vector.SD_Plane.aValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrurns parameter 'a' of the plane as defined by the plane equation ax + by + cz + d = 0. </p>
+<dl class="section return"><dt>Returns</dt><dd>The 'a' parameter of the plane. </dd></dl>
+
+</div>
+</div>
+<a id="a8ed4c718599eae29924e0a53375b3144" name="a8ed4c718599eae29924e0a53375b3144"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed4c718599eae29924e0a53375b3144">&#9670;&#160;</a></span>bValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SD_Model.Vector.SD_Plane.bValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrurns parameter 'b' of the plane as defined by the plane equation ax + by + cz + d = 0. </p>
+<dl class="section return"><dt>Returns</dt><dd>The 'b' parameter of the plane. </dd></dl>
+
+</div>
+</div>
+<a id="a3a9222f1c178ccb7c52c6ee9a376a9dd" name="a3a9222f1c178ccb7c52c6ee9a376a9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9222f1c178ccb7c52c6ee9a376a9dd">&#9670;&#160;</a></span>cValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SD_Model.Vector.SD_Plane.cValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrurns parameter 'c' of the plane as defined by the plane equation ax + by + cz + d = 0. </p>
+<dl class="section return"><dt>Returns</dt><dd>The 'c' parameter of the plane. </dd></dl>
+
+</div>
+</div>
+<a id="a7e24fa83a8bbc8c4f6a49d413a532086" name="a7e24fa83a8bbc8c4f6a49d413a532086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e24fa83a8bbc8c4f6a49d413a532086">&#9670;&#160;</a></span>dValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SD_Model.Vector.SD_Plane.dValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrurns parameter 'd' of the plane as defined by the plane equation ax + by + cz + d = 0. </p>
+<dl class="section return"><dt>Returns</dt><dd>The 'd' parameter of the plane. </dd></dl>
+
+</div>
+</div>
+<a id="af50b591c0e0469c7135845d5c6f03f7e" name="af50b591c0e0469c7135845d5c6f03f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af50b591c0e0469c7135845d5c6f03f7e">&#9670;&#160;</a></span>ToArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>[] SD_Model.Vector.SD_Plane.ToArray </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array representing the plane. </p>
+<dl class="section return"><dt>Returns</dt><dd>An array representing the plane. </dd></dl>
+
+</div>
+</div>
+<a id="adc0fbfd5f060c4d2125b47c84d538596" name="adc0fbfd5f060c4d2125b47c84d538596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc0fbfd5f060c4d2125b47c84d538596">&#9670;&#160;</a></span>ToRotationMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___matrix.html">SD_Matrix</a> SD_Model.Vector.SD_Plane.ToRotationMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the plane to a rotation matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The rotation matrix for the plane. </dd></dl>
+
+</div>
+</div>
+<a id="a4eecd1e4c6930a6b618ba90c8f898cc0" name="a4eecd1e4c6930a6b618ba90c8f898cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eecd1e4c6930a6b618ba90c8f898cc0">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string SD_Model.Vector.SD_Plane.ToString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a string representing the plane. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the plane. </dd></dl>
+
+</div>
+</div>
+<a id="aa324ed056c5cbd26ba3580c5432bbeb7" name="aa324ed056c5cbd26ba3580c5432bbeb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa324ed056c5cbd26ba3580c5432bbeb7">&#9670;&#160;</a></span>ToStringArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string[] SD_Model.Vector.SD_Plane.ToStringArray </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a string array representing the plane. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string array representing the plane. </dd></dl>
+
+</div>
+</div>
+<a id="ab0d17c34be3cad2ce7fe063d64331b08" name="ab0d17c34be3cad2ce7fe063d64331b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d17c34be3cad2ce7fe063d64331b08">&#9670;&#160;</a></span>XY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a> SD_Model.Vector.SD_Plane.XY </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a plane defined by the global x-axis and y-axis. </p>
+<dl class="section return"><dt>Returns</dt><dd>The resulting x-y plane. </dd></dl>
+
+</div>
+</div>
+<a id="a2b0cb38028ed97f7c991553034f17134" name="a2b0cb38028ed97f7c991553034f17134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b0cb38028ed97f7c991553034f17134">&#9670;&#160;</a></span>XZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a> SD_Model.Vector.SD_Plane.XZ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a plane defined by the global x-axis and z-axis. </p>
+<dl class="section return"><dt>Returns</dt><dd>The resulting x-z plane. </dd></dl>
+
+</div>
+</div>
+<a id="a60c06040ae1b2136dbdc3ae693a3c894" name="a60c06040ae1b2136dbdc3ae693a3c894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c06040ae1b2136dbdc3ae693a3c894">&#9670;&#160;</a></span>YZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a> SD_Model.Vector.SD_Plane.YZ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a plane defined by the global y-axis and z-axis. </p>
+<dl class="section return"><dt>Returns</dt><dd>The resulting y-z plane. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Vector/<b>SD_Plane.cs</b></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespace_s_d___model.html">SD_Model</a></li><li class="navelem"><a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a></li><li class="navelem"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
 </body>
 </html>

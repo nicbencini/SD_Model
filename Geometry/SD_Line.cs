@@ -7,7 +7,7 @@ namespace SD_Model.Geometry
 {
 
     /// <summary>
-    /// Class <c>SD_Line</c> 
+    /// <c>SD_Line</c> 
     /// Class for creating a 3D line.
     /// </summary>
 

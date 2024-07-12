@@ -1,0 +1,679 @@
+\doxysection{SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector Class Reference}
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector}\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+
+
+{\ttfamily \doxyref{SD\+\_\+\+Plane}{p.}{class_s_d___model_1_1_vector_1_1_s_d___plane}} Class for creating a 3D plane.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ SD\+\_\+\+Vector} (double x, double y, double z)
+\begin{DoxyCompactList}\small\item\em Returns a 3D vector from a 3 doubles. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} (double value)
+\begin{DoxyCompactList}\small\item\em Returns a 3D vector from a double. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} (string vector\+String)
+\begin{DoxyCompactList}\small\item\em Returns a 3D vector from a string. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} (\textbf{ SD\+\_\+\+Point} point)
+\begin{DoxyCompactList}\small\item\em Returns a 3d vector from a point. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} (double[$\,$] arr)
+\begin{DoxyCompactList}\small\item\em Returns a 3d vector from a double array. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representing the 3d vector. \end{DoxyCompactList}\item 
+double[$\,$] \textbf{ To\+Array} ()
+\begin{DoxyCompactList}\small\item\em Returns an array representing the 3d vector. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Point} \textbf{ To\+Point} ()
+\begin{DoxyCompactList}\small\item\em Converts the 3d vector to a point. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ Update\+From\+Array} (double[$\,$] arr)
+\begin{DoxyCompactList}\small\item\em Updates the vector coordinates from an array. \end{DoxyCompactList}\item 
+bool \textbf{ Equals} (\textbf{ SD\+\_\+\+Vector} other)
+\begin{DoxyCompactList}\small\item\em Checks whether a vector is equal to another vector. \end{DoxyCompactList}\item 
+bool \textbf{ Equals} (\textbf{ SD\+\_\+\+Vector} other, int tolerance)
+\begin{DoxyCompactList}\small\item\em Checks whether a vector is equal to another vector within a given tolerance. \end{DoxyCompactList}\item 
+double \textbf{ Magnitude} ()
+\begin{DoxyCompactList}\small\item\em Returns the magnitude of the vector. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ Reverse} ()
+\begin{DoxyCompactList}\small\item\em Returns the reverse of the vector. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ Unit} ()
+\begin{DoxyCompactList}\small\item\em Returns a unit vector of the current vector. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ Amplitude} (double length)
+\begin{DoxyCompactList}\small\item\em Sets the legnth of the vector to a given amplitude. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ Cosines} ()
+\begin{DoxyCompactList}\small\item\em Returns the cosines of the vector. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ Project} (\textbf{ SD\+\_\+\+Vector} other)
+\begin{DoxyCompactList}\small\item\em Returns the component of a vector when Projected onto another vector. \end{DoxyCompactList}\item 
+bool \textbf{ Is\+Parallel} (\textbf{ SD\+\_\+\+Vector} other)
+\begin{DoxyCompactList}\small\item\em Checks whether the vector is parallel to another vector. \end{DoxyCompactList}\item 
+bool \textbf{ Is\+Orthogonal} (\textbf{ SD\+\_\+\+Vector} other)
+\begin{DoxyCompactList}\small\item\em Checks whether the vector is orthogonal to another vector. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Vector} \textbf{ Inverse} ()
+\begin{DoxyCompactList}\small\item\em Returns the inverse of the vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \textbf{ Dot\+Product} (\textbf{ SD\+\_\+\+Vector} vector1, \textbf{ SD\+\_\+\+Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Calculates the dot product between 2 vectors. \end{DoxyCompactList}\item 
+static \textbf{ SD\+\_\+\+Vector} \textbf{ Cross\+Product} (\textbf{ SD\+\_\+\+Vector} vector1, \textbf{ SD\+\_\+\+Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Calculates the cross product between 2 vectors. \end{DoxyCompactList}\item 
+static double \textbf{ Angle} (\textbf{ SD\+\_\+\+Vector} vector1, \textbf{ SD\+\_\+\+Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Calculates the angle between 2 vectors. \end{DoxyCompactList}\item 
+static double \textbf{ Triangular\+Area} (\textbf{ SD\+\_\+\+Vector} vector1, \textbf{ SD\+\_\+\+Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Calculates the triangular area between 2 vectors. \end{DoxyCompactList}\item 
+static \textbf{ SD\+\_\+\+Vector} \textbf{ Subtract} (\textbf{ SD\+\_\+\+Vector} vector1, \textbf{ SD\+\_\+\+Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Subtracts 2 vectors. \end{DoxyCompactList}\item 
+static \textbf{ SD\+\_\+\+Vector} \textbf{ Add} (\textbf{ SD\+\_\+\+Vector} vector1, \textbf{ SD\+\_\+\+Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Adds 2 vectors. \end{DoxyCompactList}\item 
+static bool \textbf{ Coplanar} (\textbf{ SD\+\_\+\+Vector} vector1, \textbf{ SD\+\_\+\+Vector} vector2, \textbf{ SD\+\_\+\+Vector} vector3)
+\begin{DoxyCompactList}\small\item\em Checks whether 3 vectors are coplanar. \end{DoxyCompactList}\item 
+static \textbf{ SD\+\_\+\+Vector} \textbf{ Gram\+Schmit} (\textbf{ SD\+\_\+\+Vector} vector1, \textbf{ SD\+\_\+\+Vector} vector2)
+\begin{DoxyCompactList}\small\item\em Creates an orthogonal vector to the first vector in a plane defined by both vectors. \end{DoxyCompactList}\item 
+static \textbf{ SD\+\_\+\+Vector} \textbf{ UnitX} ()
+\begin{DoxyCompactList}\small\item\em Creates a unit vector in the x-\/direction. \end{DoxyCompactList}\item 
+static \textbf{ SD\+\_\+\+Vector} \textbf{ UnitY} ()
+\begin{DoxyCompactList}\small\item\em Creates a unit vector in the y-\/direction. \end{DoxyCompactList}\item 
+static \textbf{ SD\+\_\+\+Vector} \textbf{ UnitZ} ()
+\begin{DoxyCompactList}\small\item\em Creates a unit vector in the z-\/direction. \end{DoxyCompactList}\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_ac8b800e49f0540ba572ceac248d3becf} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator+} (\textbf{ SD\+\_\+\+Vector} left, double value)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_ae1331d5083aed38eabddda1494e1c6fc} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator+} (double value, \textbf{ SD\+\_\+\+Vector} left)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a67c2c6d63c0a63bf6a36efa1aa660c5f} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator+} (\textbf{ SD\+\_\+\+Vector} left, \textbf{ SD\+\_\+\+Vector} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a56326cef4f3ac555074f047a956a6cca} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator+} (\textbf{ SD\+\_\+\+Vector} left, \textbf{ SD\+\_\+\+Point} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a7e38e6d78afe67cd294b57b2591078c5} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Vector} left)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a76a93b16d5202b2d50a69c2027c380ad} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Vector} left, double value)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a6f0aea76d66ec5efb42894de0c37f80b} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator-\/} (double value, \textbf{ SD\+\_\+\+Vector} left)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a0e9db155551ae79e307fba3d2e4d0d44} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Vector} left, \textbf{ SD\+\_\+\+Vector} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a663df4d1b62279945a1b9202dfb61d2c} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Vector} left, \textbf{ SD\+\_\+\+Point} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a2dfaa41f8c4e9680162f78a4931c75a9} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator/} (\textbf{ SD\+\_\+\+Vector} left, double value)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a91fd664983a271368fcae5419993f6a7} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator/} (double value, \textbf{ SD\+\_\+\+Vector} left)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_af9f273d51b5b054f08496debb90b0df0} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator/} (\textbf{ SD\+\_\+\+Vector} left, \textbf{ SD\+\_\+\+Vector} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a8c91bf3a676f1388e50810e06278ca0a} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator/} (\textbf{ SD\+\_\+\+Vector} left, \textbf{ SD\+\_\+\+Point} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a39dd9ce8511fcd4e15c605fee2e41699} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator$\ast$} (\textbf{ SD\+\_\+\+Vector} left, double value)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a3cc7e026f0274ec07d138b425d1af5d0} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator$\ast$} (double value, \textbf{ SD\+\_\+\+Vector} left)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a7dae2a2bb47bc985e4bb4694b0074ba4} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator$\ast$} (\textbf{ SD\+\_\+\+Vector} left, \textbf{ SD\+\_\+\+Vector} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a5b13cb4800254aaf596bcd1309d7c946} 
+static \textbf{ SD\+\_\+\+Vector} {\bfseries operator$\ast$} (\textbf{ SD\+\_\+\+Vector} left, \textbf{ SD\+\_\+\+Point} right)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a04a3a09da1b8c6680ca96f75e7446824} 
+double {\bfseries X}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a4cda16ee927d42526ac71a5a4565fdf3} 
+double {\bfseries Y}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___vector_a9cfa1f528fe7c60609f3b6479c4da699} 
+double {\bfseries Z}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \doxyref{SD\+\_\+\+Plane}{p.}{class_s_d___model_1_1_vector_1_1_s_d___plane}} Class for creating a 3D plane. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!SD\_Vector@{SD\_Vector}}
+\index{SD\_Vector@{SD\_Vector}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{SD\_Vector()\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a4d306be0aa902b296a2f19ecd962d1ca} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+SD\+\_\+\+Vector (\begin{DoxyParamCaption}\item[{double}]{x}{, }\item[{double}]{y}{, }\item[{double}]{z}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D vector from a 3 doubles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & (double) The value for the x coordinate of the vector.\\
+\hline
+{\em y} & (double) The value for the y coordinate of the vector.\\
+\hline
+{\em z} & (double) The value for the z coordinate of the vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3D vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!SD\_Vector@{SD\_Vector}}
+\index{SD\_Vector@{SD\_Vector}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{SD\_Vector()\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a50cb0d9d44c6a5aee95e2bd1f601bfd8} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+SD\+\_\+\+Vector (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D vector from a double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & (double) The value for the x,y and z coordinate of the vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3D vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!SD\_Vector@{SD\_Vector}}
+\index{SD\_Vector@{SD\_Vector}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{SD\_Vector()\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_abf1f0fc1bde087660142b8ca4b7a65fd} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+SD\+\_\+\+Vector (\begin{DoxyParamCaption}\item[{string}]{vector\+String}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3D vector from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector\+String} & (string) A string with the cooridnate information for the vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3D vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!SD\_Vector@{SD\_Vector}}
+\index{SD\_Vector@{SD\_Vector}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{SD\_Vector()\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a41f654545315a1b0b93f0af330354135} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+SD\+\_\+\+Vector (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Point}}]{point}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3d vector from a point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & (SD\+\_\+\+Point) A point from which to construct the vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3d vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!SD\_Vector@{SD\_Vector}}
+\index{SD\_Vector@{SD\_Vector}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{SD\_Vector()\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_aef187a7f9c5bc70914495e7370ab2769} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+SD\+\_\+\+Vector (\begin{DoxyParamCaption}\item[{double[$\,$]}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Returns a 3d vector from a double array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & (double []) A double array defining the coordinates of the 3d vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 3d vector. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Add@{Add}}
+\index{Add@{Add}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Add()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a5f32bf86919d3514670e24f00482d323} 
+static \textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Add (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds 2 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The first vector.\\
+\hline
+{\em vector2} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resultant vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Amplitude@{Amplitude}}
+\index{Amplitude@{Amplitude}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Amplitude()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_ac641c26e7fdb2621926dcf8eb6ce6afb} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Amplitude (\begin{DoxyParamCaption}\item[{double}]{length}{}\end{DoxyParamCaption})}
+
+
+
+Sets the legnth of the vector to a given amplitude. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & (double) The amplitude of the vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Angle@{Angle}}
+\index{Angle@{Angle}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Angle()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a51db9640a7b942acb81ba9aef46c7470} 
+static double SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Angle (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the angle between 2 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The first vector.\\
+\hline
+{\em vector2} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle between the vectors. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Coplanar@{Coplanar}}
+\index{Coplanar@{Coplanar}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Coplanar()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a9953e464c967d7a9ef62a7e04cfc1274} 
+static bool SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Coplanar (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector2}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector3}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks whether 3 vectors are coplanar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The first vector.\\
+\hline
+{\em vector2} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The second vector.\\
+\hline
+{\em vector3} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The third vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns \textquotesingle{}true\textquotesingle{} if the vectors are coplanar. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Cosines@{Cosines}}
+\index{Cosines@{Cosines}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Cosines()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a4ad8ba0b2d030aa8ac482c1067c8732f} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Cosines (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the cosines of the vector. 
+
+\begin{DoxyReturn}{Returns}
+The cosines of the vector. 
+\end{DoxyReturn}
+Returns the directional cosines for a vector\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!CrossProduct@{CrossProduct}}
+\index{CrossProduct@{CrossProduct}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{CrossProduct()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a5b1dfb5e30604234067c9d7d2b3d7522} 
+static \textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Cross\+Product (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the cross product between 2 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The first vector.\\
+\hline
+{\em vector2} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cross product of both vectors. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!DotProduct@{DotProduct}}
+\index{DotProduct@{DotProduct}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{DotProduct()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a929d49df03ceb262c6051de2b129b289} 
+static double SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Dot\+Product (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the dot product between 2 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The first vector.\\
+\hline
+{\em vector2} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dot product of both vectors. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Equals@{Equals}}
+\index{Equals@{Equals}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Equals()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a841dffc7b3a4ee1ccf4962b1262f6339} 
+bool SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Equals (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether a vector is equal to another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The vector to check against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retruns \textquotesingle{}true\textquotesingle{} if the vectors are equal. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Equals@{Equals}}
+\index{Equals@{Equals}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Equals()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a38beb2aaf2c09d4cbc77dde29a1c1d44} 
+bool SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Equals (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{other}{, }\item[{int}]{tolerance}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether a vector is equal to another vector within a given tolerance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The vector to check against.\\
+\hline
+{\em tolerance} & (double) The tolerance between the 2 vectors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retruns \textquotesingle{}true\textquotesingle{} if the vectors are equal. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!GramSchmit@{GramSchmit}}
+\index{GramSchmit@{GramSchmit}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{GramSchmit()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a9bf67e96de68da282cd0ef0ba85b46fa} 
+static \textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Gram\+Schmit (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an orthogonal vector to the first vector in a plane defined by both vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The first vector.\\
+\hline
+{\em vector2} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resultant orthogonal vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Inverse()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a508127039f337fe1af2995896703484e} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Inverse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the inverse of the vector. 
+
+\begin{DoxyReturn}{Returns}
+The inverse of the vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!IsOrthogonal@{IsOrthogonal}}
+\index{IsOrthogonal@{IsOrthogonal}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{IsOrthogonal()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a04afd0b71589e10084387e9d139e09a1} 
+bool SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Is\+Orthogonal (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether the vector is orthogonal to another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The vector to check agaisnt.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns \textquotesingle{}true\textquotesingle{} if the vectors are orthogonal. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!IsParallel@{IsParallel}}
+\index{IsParallel@{IsParallel}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{IsParallel()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_ad8e7d1377c9bbc6d986c76a07f4f73b8} 
+bool SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Is\+Parallel (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether the vector is parallel to another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The vector to check agaisnt.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns \textquotesingle{}true\textquotesingle{} if the vectors are parallel. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Magnitude@{Magnitude}}
+\index{Magnitude@{Magnitude}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Magnitude()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a7bf24429bc2651c49770ac737cb394b5} 
+double SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Magnitude (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the magnitude of the vector. 
+
+\begin{DoxyReturn}{Returns}
+The magnitude of the vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Project@{Project}}
+\index{Project@{Project}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Project()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a94f5527a13e941b69a5bdfd4d1bb505b} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Project (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Returns the component of a vector when Projected onto another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The vector to project onto.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The projected vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Reverse()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a70473e385777e9e8c43803f782d3aba1} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Reverse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns the reverse of the vector. 
+
+\begin{DoxyReturn}{Returns}
+The reverse of the vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Subtract()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a4d8094cb29eb9a30c8a0879c26c11cb8} 
+static \textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Subtract (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Subtracts 2 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The first vector.\\
+\hline
+{\em vector2} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resultant vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{ToArray()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_aa442d655683a900d4750120b680826fd} 
+double[$\,$] SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+To\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns an array representing the 3d vector. 
+
+\begin{DoxyReturn}{Returns}
+An array representing the 3d vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!ToPoint@{ToPoint}}
+\index{ToPoint@{ToPoint}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{ToPoint()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a754fe714544bab2398b648d65ce0a4a7} 
+\textbf{ SD\+\_\+\+Point} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+To\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Converts the 3d vector to a point. 
+
+\begin{DoxyReturn}{Returns}
+A point representing the 3d vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!ToString@{ToString}}
+\index{ToString@{ToString}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a8bdd4b9cd8515f48c2f63826c0677380} 
+override string SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a string representing the 3d vector. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the 3d vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!TriangularArea@{TriangularArea}}
+\index{TriangularArea@{TriangularArea}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{TriangularArea()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a4b26ddc98206d4eddb41135a599375b4} 
+static double SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Triangular\+Area (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Vector}}]{vector1}{, }\item[{\textbf{ SD\+\_\+\+Vector}}]{vector2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the triangular area between 2 vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector1} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The first vector.\\
+\hline
+{\em vector2} & (\doxyref{SD\+\_\+\+Vector}{p.}{class_s_d___model_1_1_vector_1_1_s_d___vector}) The second vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The triangular area between the vectors. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!Unit@{Unit}}
+\index{Unit@{Unit}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{Unit()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_aa0f6c6dc16cf1c6412442220d7758c5a} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Unit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Returns a unit vector of the current vector. 
+
+\begin{DoxyReturn}{Returns}
+The unit vector. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!UnitX@{UnitX}}
+\index{UnitX@{UnitX}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{UnitX()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a1c2710c2f07917c60ca834d670b5ce4e} 
+static \textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+UnitX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a unit vector in the x-\/direction. 
+
+\begin{DoxyReturn}{Returns}
+Unit vector aligned with the global x-\/axis. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!UnitY@{UnitY}}
+\index{UnitY@{UnitY}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{UnitY()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a7e7bf100389f3d46266eb48f28ffc04d} 
+static \textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+UnitY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a unit vector in the y-\/direction. 
+
+\begin{DoxyReturn}{Returns}
+Unit vector aligned with the global y-\/axis. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!UnitZ@{UnitZ}}
+\index{UnitZ@{UnitZ}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{UnitZ()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_afc46a6d1c1568906c9f8c7dce10f4629} 
+static \textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+UnitZ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a unit vector in the z-\/direction. 
+
+\begin{DoxyReturn}{Returns}
+Unit vector aligned with the global z-\/axis. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}!UpdateFromArray@{UpdateFromArray}}
+\index{UpdateFromArray@{UpdateFromArray}!SD\_Model.Vector.SD\_Vector@{SD\_Model.Vector.SD\_Vector}}
+\doxysubsubsection{UpdateFromArray()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___vector_a70be46b0a507fdf147279dae12beb09b} 
+\textbf{ SD\+\_\+\+Vector} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Vector.\+Update\+From\+Array (\begin{DoxyParamCaption}\item[{double[$\,$]}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Updates the vector coordinates from an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & (double []) A double array defining the coordinates of the 3d vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated vector. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vector/SD\+\_\+\+Vector.\+cs\end{DoxyCompactItemize}

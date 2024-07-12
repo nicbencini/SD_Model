@@ -11,10 +11,7 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,6 +23,7 @@
   <td id="projectalign">
    <div id="projectname">SD_Vector
    </div>
+   <div id="projectbrief">The goal behind this project is to create a self-contained (does not rely on any external dependencies) vector library written in C# .NET Standard 2.1 to solve 3d geometry interactions.</div>
   </td>
  </tr>
  </tbody>
@@ -43,27 +41,21 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',false,false,'search.php','Search',true);
+  initMenu('',false,false,'search.php','Search',false);
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('class_s_d___model_1_1_geometry_1_1_s_d___point.html',''); initResizable(true); });
+$(function(){ initResizable(false); });
 /* @license-end */
 </script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_s_d___model.html">SD_Model</a></li><li class="navelem"><a class="el" href="namespace_s_d___model_1_1_geometry.html">Geometry</a></li><li class="navelem"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
@@ -75,7 +67,7 @@ $(function(){initNavTree('class_s_d___model_1_1_geometry_1_1_s_d___point.html','
 </div><!--header-->
 <div class="contents">
 
-<p>Class <code><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a></code> Class for creating a 3D point.  
+<p><code><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a></code> Class for creating a 3D point.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -187,7 +179,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <tr class="separator:a3b01ed027b631a98e1ff13a802f94aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class <code><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a></code> Class for creating a 3D point. </p>
+<div class="textblock"><p><code><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a></code> Class for creating a 3D point. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a118a5e6f467d12ae9b2420e9b89581d8" name="a118a5e6f467d12ae9b2420e9b89581d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a118a5e6f467d12ae9b2420e9b89581d8">&#9670;&#160;</a></span>SD_Point() <span class="overload">[1/4]</span></h2>
@@ -207,7 +199,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <p>Returns a 3D point from a double. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>(double) The value for the x,y and z coordinate of the line.</td></tr>
+    <tr><td class="paramname">value</td><td>(double) The value for the x,y and z coordinate of the point.</td></tr>
   </table>
   </dd>
 </dl>
@@ -242,9 +234,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <p>Returns a 3D point from a 3 doubles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>(double) The value for the x coordinate of the line.</td></tr>
-    <tr><td class="paramname">y</td><td>(double) The value for the y coordinate of the line.</td></tr>
-    <tr><td class="paramname">z</td><td>(double) The value for the z coordinate of the line.</td></tr>
+    <tr><td class="paramname">x</td><td>(double) The value for the x coordinate of the point.</td></tr>
+    <tr><td class="paramname">y</td><td>(double) The value for the y coordinate of the point.</td></tr>
+    <tr><td class="paramname">z</td><td>(double) The value for the z coordinate of the point.</td></tr>
   </table>
   </dd>
 </dl>
@@ -332,9 +324,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <p>Calcualtes the area of a triangle defined by 3 points. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point1</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
-    <tr><td class="paramname">point2</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
-    <tr><td class="paramname">point3</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
+    <tr><td class="paramname">point1</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
+    <tr><td class="paramname">point2</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
+    <tr><td class="paramname">point3</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
   </table>
   </dd>
 </dl>
@@ -360,7 +352,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <p>Calculates the distance between 2 points. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">other</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a>) The point to compare against.</td></tr>
+    <tr><td class="paramname">other</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a>) The point to compare against.</td></tr>
   </table>
   </dd>
 </dl>
@@ -426,10 +418,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <p>Checks whether 4 points lie within the same plane. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">point1</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
-    <tr><td class="paramname">point2</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
-    <tr><td class="paramname">point3</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
-    <tr><td class="paramname">point4</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="Class SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
+    <tr><td class="paramname">point1</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
+    <tr><td class="paramname">point2</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
+    <tr><td class="paramname">point3</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
+    <tr><td class="paramname">point4</td><td>(<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html" title="SD_Point Class for creating a 3D point.">SD_Point</a>) The point to check.</td></tr>
   </table>
   </dd>
 </dl>
@@ -521,13 +513,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <li>Geometry/<b>SD_Point.cs</b></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespace_s_d___model.html">SD_Model</a></li><li class="navelem"><a class="el" href="namespace_s_d___model_1_1_geometry.html">Geometry</a></li><li class="navelem"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
 </body>
 </html>

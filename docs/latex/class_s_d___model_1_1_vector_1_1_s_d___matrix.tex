@@ -1,0 +1,309 @@
+\doxysection{SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix Class Reference}
+\label{class_s_d___model_1_1_vector_1_1_s_d___matrix}\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+
+
+{\ttfamily \doxyref{SD\+\_\+\+Matrix}{p.}{class_s_d___model_1_1_vector_1_1_s_d___matrix}} Matrix library class.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ SD\+\_\+\+Matrix} (double[$\,$][$\,$] matrix)
+\begin{DoxyCompactList}\small\item\em Create matrix from array of arrays. \end{DoxyCompactList}\item 
+bool \textbf{ Is\+Square} ()
+\begin{DoxyCompactList}\small\item\em Checks whether matrix column length and row length are the same. \end{DoxyCompactList}\item 
+bool \textbf{ Equals} (\textbf{ SD\+\_\+\+Matrix} other)
+\begin{DoxyCompactList}\small\item\em Checks whether matrix is equal to other matrix. \end{DoxyCompactList}\item 
+bool \textbf{ Is\+Same\+Size} (\textbf{ SD\+\_\+\+Matrix} other)
+\begin{DoxyCompactList}\small\item\em Checks whether matrix is same size to other matrix. \end{DoxyCompactList}\item 
+void \textbf{ Scale} (double value)
+\begin{DoxyCompactList}\small\item\em Scales a matrix by a value. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Matrix} \textbf{ Transpose} ()
+\begin{DoxyCompactList}\small\item\em Swaps matrix rows and columns. \end{DoxyCompactList}\item 
+void \textbf{ Add\+Range} (Tuple$<$ int, int $>$ row\+Tuple, Tuple$<$ int, int $>$ column\+Tuple, \textbf{ SD\+\_\+\+Matrix} other\+Matrix)
+\begin{DoxyCompactList}\small\item\em Adds a range of values to a matrix. \end{DoxyCompactList}\item 
+\textbf{ SD\+\_\+\+Matrix} \textbf{ Get\+Range} (Tuple$<$ int, int $>$ row\+Tuple, Tuple$<$ int, int $>$ column\+Tuple)
+\begin{DoxyCompactList}\small\item\em Gets a range of values to a matrix. \end{DoxyCompactList}\item 
+double[$\,$][$\,$] \textbf{ To\+Array} ()
+\begin{DoxyCompactList}\small\item\em Converts a matrix to an array. \end{DoxyCompactList}\item 
+void \textbf{ Remove\+Row} (int index)
+\begin{DoxyCompactList}\small\item\em Removes a row from a matix. \end{DoxyCompactList}\item 
+void \textbf{ Remove\+Column} (int index)
+\begin{DoxyCompactList}\small\item\em Removes a column from a matix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \textbf{ SD\+\_\+\+Matrix} \textbf{ Zero\+Matrix} (int row\+Count, int column\+Count)
+\begin{DoxyCompactList}\small\item\em Creates an zero matrix of specified size. \end{DoxyCompactList}\item 
+static \textbf{ SD\+\_\+\+Matrix} \textbf{ Identity\+Matrix} (int row\+Count, int column\+Count)
+\begin{DoxyCompactList}\small\item\em Creates an identity matrix of specified size. \end{DoxyCompactList}\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a2f7ce6f7baec5bd1e519b61c12f59147} 
+static \textbf{ SD\+\_\+\+Matrix} {\bfseries operator+} (\textbf{ SD\+\_\+\+Matrix} left, \textbf{ SD\+\_\+\+Matrix} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a770490a2ef3ce67a394be303767fb637} 
+static \textbf{ SD\+\_\+\+Matrix} {\bfseries operator-\/} (\textbf{ SD\+\_\+\+Matrix} left, \textbf{ SD\+\_\+\+Matrix} right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a8341b5dce60d6205e5d0eff7a96b868c} 
+static \textbf{ SD\+\_\+\+Matrix} {\bfseries operator$\ast$} (\textbf{ SD\+\_\+\+Matrix} left, double right)
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___matrix_af0473c14c935208156b91062d1e2f4cd} 
+static \textbf{ SD\+\_\+\+Matrix} {\bfseries operator$\ast$} (\textbf{ SD\+\_\+\+Matrix} left, \textbf{ SD\+\_\+\+Matrix} right)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___matrix_ac0df76b8ac2b5fd6c0f2e600a13f846b} 
+double[$\,$][$\,$] {\bfseries Values}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___matrix_ad51f7ae2384f3cedfa40a19f785da063} 
+int {\bfseries Row\+Count}\hspace{0.3cm}{\ttfamily  [get, set]}
+\item 
+\label{class_s_d___model_1_1_vector_1_1_s_d___matrix_aeb967d6f179103c9f5b5dcde02026bb2} 
+int {\bfseries Column\+Count}\hspace{0.3cm}{\ttfamily  [get, set]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \doxyref{SD\+\_\+\+Matrix}{p.}{class_s_d___model_1_1_vector_1_1_s_d___matrix}} Matrix library class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!SD\_Matrix@{SD\_Matrix}}
+\index{SD\_Matrix@{SD\_Matrix}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{SD\_Matrix()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_aaa4a3f64d9b9365e4e4a1667c221599b} 
+SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+SD\+\_\+\+Matrix (\begin{DoxyParamCaption}\item[{double}]{matrix}{[$\,$][$\,$]}\end{DoxyParamCaption})}
+
+
+
+Create matrix from array of arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & (double[][]) Creates a matrix from a double array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 2-\/dimensional matrix. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!AddRange@{AddRange}}
+\index{AddRange@{AddRange}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{AddRange()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_aacee14e327ddd66cc0f13740e37463ce} 
+void SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Add\+Range (\begin{DoxyParamCaption}\item[{Tuple$<$ int, int $>$}]{row\+Tuple}{, }\item[{Tuple$<$ int, int $>$}]{column\+Tuple}{, }\item[{\textbf{ SD\+\_\+\+Matrix}}]{other\+Matrix}{}\end{DoxyParamCaption})}
+
+
+
+Adds a range of values to a matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Tuple} & (int) A tuple defining the row data and index.\\
+\hline
+{\em column\+Tuple} & (int) A tuple defining the column data and index\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em other\+Matrix} & (\doxyref{SD\+\_\+\+Matrix}{p.}{class_s_d___model_1_1_vector_1_1_s_d___matrix}) Matrix to add values to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated matrix. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!Equals@{Equals}}
+\index{Equals@{Equals}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a0d20b4020486e63931c6e3a9290f4845} 
+bool SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Equals (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Matrix}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether matrix is equal to other matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Matrix}{p.}{class_s_d___model_1_1_vector_1_1_s_d___matrix}) The matrix to check against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}True\textquotesingle{} if matrices are equel. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{GetRange()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a8cbefec87a58daf8c420f595a81b206a} 
+\textbf{ SD\+\_\+\+Matrix} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Get\+Range (\begin{DoxyParamCaption}\item[{Tuple$<$ int, int $>$}]{row\+Tuple}{, }\item[{Tuple$<$ int, int $>$}]{column\+Tuple}{}\end{DoxyParamCaption})}
+
+
+
+Gets a range of values to a matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Tuple} & (int) A tuple defining the row data and index.\\
+\hline
+{\em column\+Tuple} & (int) A tuple defining the column data and index\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data matrix. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!IdentityMatrix@{IdentityMatrix}}
+\index{IdentityMatrix@{IdentityMatrix}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{IdentityMatrix()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a09aabe8b459ab0a75c5a9207fe240d88} 
+static \textbf{ SD\+\_\+\+Matrix} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Identity\+Matrix (\begin{DoxyParamCaption}\item[{int}]{row\+Count}{, }\item[{int}]{column\+Count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an identity matrix of specified size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Count} & (int) The number of rows of the matrix.\\
+\hline
+{\em column\+Count} & (int) The number of columns of the matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resultant identity matrix. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!IsSameSize@{IsSameSize}}
+\index{IsSameSize@{IsSameSize}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{IsSameSize()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a166d2e47c19b9aad96f769dfbd8f83c6} 
+bool SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Is\+Same\+Size (\begin{DoxyParamCaption}\item[{\textbf{ SD\+\_\+\+Matrix}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether matrix is same size to other matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & (\doxyref{SD\+\_\+\+Matrix}{p.}{class_s_d___model_1_1_vector_1_1_s_d___matrix}) The matrix to check against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}True\textquotesingle{} if matrices are the same size. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!IsSquare@{IsSquare}}
+\index{IsSquare@{IsSquare}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{IsSquare()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a1a45405086ab2d4a7a335ffc9fd34611} 
+bool SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Is\+Square (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Checks whether matrix column length and row length are the same. 
+
+\begin{DoxyReturn}{Returns}
+\textquotesingle{}True\textquotesingle{} if matrix is square. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!RemoveColumn@{RemoveColumn}}
+\index{RemoveColumn@{RemoveColumn}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{RemoveColumn()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a187cb10d66c6f4a602b4a86ef6016a28} 
+void SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Remove\+Column (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Removes a column from a matix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & (int) The index of the column to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated matix. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!RemoveRow@{RemoveRow}}
+\index{RemoveRow@{RemoveRow}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{RemoveRow()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a7ff2e9e6598d55253be41c9ba12e8291} 
+void SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Remove\+Row (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Removes a row from a matix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & (int) The index of the row to remove.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated matix. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!Scale@{Scale}}
+\index{Scale@{Scale}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{Scale()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_a078f1cfcf8a33d90fa9ef6733825d5b2} 
+void SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Scale (\begin{DoxyParamCaption}\item[{double}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Scales a matrix by a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & (double) The scalar value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled matrix. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{ToArray()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_af3b69f581b34e4de584e2d9a5aabdf76} 
+double[$\,$][$\,$] SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+To\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Converts a matrix to an array. 
+
+\begin{DoxyReturn}{Returns}
+The 2 dimensionsal double array representing the matix. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!Transpose@{Transpose}}
+\index{Transpose@{Transpose}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{Transpose()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_aaf9bf11fe1cfc439eafd4c45281e8494} 
+\textbf{ SD\+\_\+\+Matrix} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Transpose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Swaps matrix rows and columns. 
+
+\begin{DoxyReturn}{Returns}
+The transposed matrix. 
+\end{DoxyReturn}
+\index{SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}!ZeroMatrix@{ZeroMatrix}}
+\index{ZeroMatrix@{ZeroMatrix}!SD\_Model.Vector.SD\_Matrix@{SD\_Model.Vector.SD\_Matrix}}
+\doxysubsubsection{ZeroMatrix()}
+{\footnotesize\ttfamily \label{class_s_d___model_1_1_vector_1_1_s_d___matrix_afc874626c8918dc7f7357630f390386e} 
+static \textbf{ SD\+\_\+\+Matrix} SD\+\_\+\+Model.\+Vector.\+SD\+\_\+\+Matrix.\+Zero\+Matrix (\begin{DoxyParamCaption}\item[{int}]{row\+Count}{, }\item[{int}]{column\+Count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an zero matrix of specified size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row\+Count} & (int) The number of rows of the matrix.\\
+\hline
+{\em column\+Count} & (int) The number of columns of the matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resultant zero matrix. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Vector/SD\+\_\+\+Matrix.\+cs\end{DoxyCompactItemize}

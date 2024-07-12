@@ -11,10 +11,7 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="cookie.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,6 +23,7 @@
   <td id="projectalign">
    <div id="projectname">SD_Vector
    </div>
+   <div id="projectbrief">The goal behind this project is to create a self-contained (does not rely on any external dependencies) vector library written in C# .NET Standard 2.1 to solve 3d geometry interactions.</div>
   </td>
  </tr>
  </tbody>
@@ -43,27 +41,21 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',false,false,'search.php','Search',true);
+  initMenu('',false,false,'search.php','Search',false);
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('class_s_d___model_1_1_vector_1_1_s_d___vector.html',''); initResizable(true); });
+$(function(){ initResizable(false); });
 /* @license-end */
 </script>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_s_d___model.html">SD_Model</a></li><li class="navelem"><a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a></li><li class="navelem"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
@@ -75,102 +67,106 @@ $(function(){initNavTree('class_s_d___model_1_1_vector_1_1_s_d___vector.html',''
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> object.  
+<p><code><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html" title="SD_Plane Class for creating a 3D plane.">SD_Plane</a></code> Class for creating a 3D plane.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4d306be0aa902b296a2f19ecd962d1ca" id="r_a4d306be0aa902b296a2f19ecd962d1ca"><td class="memItemLeft" align="right" valign="top"><a id="a4d306be0aa902b296a2f19ecd962d1ca" name="a4d306be0aa902b296a2f19ecd962d1ca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Vector</b> (double x, double y, double z)</td></tr>
+<tr class="memitem:a4d306be0aa902b296a2f19ecd962d1ca" id="r_a4d306be0aa902b296a2f19ecd962d1ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d306be0aa902b296a2f19ecd962d1ca">SD_Vector</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:a4d306be0aa902b296a2f19ecd962d1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 3D vector from a 3 doubles.  <br /></td></tr>
 <tr class="separator:a4d306be0aa902b296a2f19ecd962d1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50cb0d9d44c6a5aee95e2bd1f601bfd8" id="r_a50cb0d9d44c6a5aee95e2bd1f601bfd8"><td class="memItemLeft" align="right" valign="top"><a id="a50cb0d9d44c6a5aee95e2bd1f601bfd8" name="a50cb0d9d44c6a5aee95e2bd1f601bfd8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Vector</b> (double value)</td></tr>
+<tr class="memitem:a50cb0d9d44c6a5aee95e2bd1f601bfd8" id="r_a50cb0d9d44c6a5aee95e2bd1f601bfd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50cb0d9d44c6a5aee95e2bd1f601bfd8">SD_Vector</a> (double value)</td></tr>
+<tr class="memdesc:a50cb0d9d44c6a5aee95e2bd1f601bfd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 3D vector from a double.  <br /></td></tr>
 <tr class="separator:a50cb0d9d44c6a5aee95e2bd1f601bfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1f0fc1bde087660142b8ca4b7a65fd" id="r_abf1f0fc1bde087660142b8ca4b7a65fd"><td class="memItemLeft" align="right" valign="top"><a id="abf1f0fc1bde087660142b8ca4b7a65fd" name="abf1f0fc1bde087660142b8ca4b7a65fd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Vector</b> (string vectorString)</td></tr>
+<tr class="memitem:abf1f0fc1bde087660142b8ca4b7a65fd" id="r_abf1f0fc1bde087660142b8ca4b7a65fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf1f0fc1bde087660142b8ca4b7a65fd">SD_Vector</a> (string vectorString)</td></tr>
+<tr class="memdesc:abf1f0fc1bde087660142b8ca4b7a65fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 3D vector from a string.  <br /></td></tr>
 <tr class="separator:abf1f0fc1bde087660142b8ca4b7a65fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41f654545315a1b0b93f0af330354135" id="r_a41f654545315a1b0b93f0af330354135"><td class="memItemLeft" align="right" valign="top"><a id="a41f654545315a1b0b93f0af330354135" name="a41f654545315a1b0b93f0af330354135"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Vector</b> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> point)</td></tr>
+<tr class="memitem:a41f654545315a1b0b93f0af330354135" id="r_a41f654545315a1b0b93f0af330354135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41f654545315a1b0b93f0af330354135">SD_Vector</a> (<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> point)</td></tr>
+<tr class="memdesc:a41f654545315a1b0b93f0af330354135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 3d vector from a point.  <br /></td></tr>
 <tr class="separator:a41f654545315a1b0b93f0af330354135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef187a7f9c5bc70914495e7370ab2769" id="r_aef187a7f9c5bc70914495e7370ab2769"><td class="memItemLeft" align="right" valign="top"><a id="aef187a7f9c5bc70914495e7370ab2769" name="aef187a7f9c5bc70914495e7370ab2769"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SD_Vector</b> (double[] arr)</td></tr>
+<tr class="memitem:aef187a7f9c5bc70914495e7370ab2769" id="r_aef187a7f9c5bc70914495e7370ab2769"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef187a7f9c5bc70914495e7370ab2769">SD_Vector</a> (double[] arr)</td></tr>
+<tr class="memdesc:aef187a7f9c5bc70914495e7370ab2769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 3d vector from a double array.  <br /></td></tr>
 <tr class="separator:aef187a7f9c5bc70914495e7370ab2769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bdd4b9cd8515f48c2f63826c0677380" id="r_a8bdd4b9cd8515f48c2f63826c0677380"><td class="memItemLeft" align="right" valign="top"><a id="a8bdd4b9cd8515f48c2f63826c0677380" name="a8bdd4b9cd8515f48c2f63826c0677380"></a>
-override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="memitem:a8bdd4b9cd8515f48c2f63826c0677380" id="r_a8bdd4b9cd8515f48c2f63826c0677380"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bdd4b9cd8515f48c2f63826c0677380">ToString</a> ()</td></tr>
+<tr class="memdesc:a8bdd4b9cd8515f48c2f63826c0677380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representing the 3d vector.  <br /></td></tr>
 <tr class="separator:a8bdd4b9cd8515f48c2f63826c0677380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa442d655683a900d4750120b680826fd" id="r_aa442d655683a900d4750120b680826fd"><td class="memItemLeft" align="right" valign="top"><a id="aa442d655683a900d4750120b680826fd" name="aa442d655683a900d4750120b680826fd"></a>
-double[]&#160;</td><td class="memItemRight" valign="bottom"><b>ToArray</b> ()</td></tr>
+<tr class="memitem:aa442d655683a900d4750120b680826fd" id="r_aa442d655683a900d4750120b680826fd"><td class="memItemLeft" align="right" valign="top">double[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa442d655683a900d4750120b680826fd">ToArray</a> ()</td></tr>
+<tr class="memdesc:aa442d655683a900d4750120b680826fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array representing the 3d vector.  <br /></td></tr>
 <tr class="separator:aa442d655683a900d4750120b680826fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a754fe714544bab2398b648d65ce0a4a7" id="r_a754fe714544bab2398b648d65ce0a4a7"><td class="memItemLeft" align="right" valign="top"><a id="a754fe714544bab2398b648d65ce0a4a7" name="a754fe714544bab2398b648d65ce0a4a7"></a>
-<a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToPoint</b> ()</td></tr>
+<tr class="memitem:a754fe714544bab2398b648d65ce0a4a7" id="r_a754fe714544bab2398b648d65ce0a4a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a754fe714544bab2398b648d65ce0a4a7">ToPoint</a> ()</td></tr>
+<tr class="memdesc:a754fe714544bab2398b648d65ce0a4a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the 3d vector to a point.  <br /></td></tr>
 <tr class="separator:a754fe714544bab2398b648d65ce0a4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70be46b0a507fdf147279dae12beb09b" id="r_a70be46b0a507fdf147279dae12beb09b"><td class="memItemLeft" align="right" valign="top"><a id="a70be46b0a507fdf147279dae12beb09b" name="a70be46b0a507fdf147279dae12beb09b"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFromArray</b> (double[] arr)</td></tr>
+<tr class="memitem:a70be46b0a507fdf147279dae12beb09b" id="r_a70be46b0a507fdf147279dae12beb09b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70be46b0a507fdf147279dae12beb09b">UpdateFromArray</a> (double[] arr)</td></tr>
+<tr class="memdesc:a70be46b0a507fdf147279dae12beb09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the vector coordinates from an array.  <br /></td></tr>
 <tr class="separator:a70be46b0a507fdf147279dae12beb09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a841dffc7b3a4ee1ccf4962b1262f6339" id="r_a841dffc7b3a4ee1ccf4962b1262f6339"><td class="memItemLeft" align="right" valign="top"><a id="a841dffc7b3a4ee1ccf4962b1262f6339" name="a841dffc7b3a4ee1ccf4962b1262f6339"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Equals</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> other)</td></tr>
+<tr class="memitem:a841dffc7b3a4ee1ccf4962b1262f6339" id="r_a841dffc7b3a4ee1ccf4962b1262f6339"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a841dffc7b3a4ee1ccf4962b1262f6339">Equals</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> other)</td></tr>
+<tr class="memdesc:a841dffc7b3a4ee1ccf4962b1262f6339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a vector is equal to another vector.  <br /></td></tr>
 <tr class="separator:a841dffc7b3a4ee1ccf4962b1262f6339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38beb2aaf2c09d4cbc77dde29a1c1d44" id="r_a38beb2aaf2c09d4cbc77dde29a1c1d44"><td class="memItemLeft" align="right" valign="top"><a id="a38beb2aaf2c09d4cbc77dde29a1c1d44" name="a38beb2aaf2c09d4cbc77dde29a1c1d44"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Equals</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> other, int tolerance)</td></tr>
+<tr class="memitem:a38beb2aaf2c09d4cbc77dde29a1c1d44" id="r_a38beb2aaf2c09d4cbc77dde29a1c1d44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38beb2aaf2c09d4cbc77dde29a1c1d44">Equals</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> other, int tolerance)</td></tr>
+<tr class="memdesc:a38beb2aaf2c09d4cbc77dde29a1c1d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a vector is equal to another vector within a given tolerance.  <br /></td></tr>
 <tr class="separator:a38beb2aaf2c09d4cbc77dde29a1c1d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bf24429bc2651c49770ac737cb394b5" id="r_a7bf24429bc2651c49770ac737cb394b5"><td class="memItemLeft" align="right" valign="top"><a id="a7bf24429bc2651c49770ac737cb394b5" name="a7bf24429bc2651c49770ac737cb394b5"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>Magnitude</b> ()</td></tr>
+<tr class="memitem:a7bf24429bc2651c49770ac737cb394b5" id="r_a7bf24429bc2651c49770ac737cb394b5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bf24429bc2651c49770ac737cb394b5">Magnitude</a> ()</td></tr>
+<tr class="memdesc:a7bf24429bc2651c49770ac737cb394b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the magnitude of the vector.  <br /></td></tr>
 <tr class="separator:a7bf24429bc2651c49770ac737cb394b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70473e385777e9e8c43803f782d3aba1" id="r_a70473e385777e9e8c43803f782d3aba1"><td class="memItemLeft" align="right" valign="top"><a id="a70473e385777e9e8c43803f782d3aba1" name="a70473e385777e9e8c43803f782d3aba1"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Reverse</b> ()</td></tr>
+<tr class="memitem:a70473e385777e9e8c43803f782d3aba1" id="r_a70473e385777e9e8c43803f782d3aba1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70473e385777e9e8c43803f782d3aba1">Reverse</a> ()</td></tr>
+<tr class="memdesc:a70473e385777e9e8c43803f782d3aba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reverse of the vector.  <br /></td></tr>
 <tr class="separator:a70473e385777e9e8c43803f782d3aba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0f6c6dc16cf1c6412442220d7758c5a" id="r_aa0f6c6dc16cf1c6412442220d7758c5a"><td class="memItemLeft" align="right" valign="top"><a id="aa0f6c6dc16cf1c6412442220d7758c5a" name="aa0f6c6dc16cf1c6412442220d7758c5a"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Unit</b> ()</td></tr>
+<tr class="memitem:aa0f6c6dc16cf1c6412442220d7758c5a" id="r_aa0f6c6dc16cf1c6412442220d7758c5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0f6c6dc16cf1c6412442220d7758c5a">Unit</a> ()</td></tr>
+<tr class="memdesc:aa0f6c6dc16cf1c6412442220d7758c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unit vector of the current vector.  <br /></td></tr>
 <tr class="separator:aa0f6c6dc16cf1c6412442220d7758c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac641c26e7fdb2621926dcf8eb6ce6afb" id="r_ac641c26e7fdb2621926dcf8eb6ce6afb"><td class="memItemLeft" align="right" valign="top"><a id="ac641c26e7fdb2621926dcf8eb6ce6afb" name="ac641c26e7fdb2621926dcf8eb6ce6afb"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Amplitude</b> (double length)</td></tr>
+<tr class="memitem:ac641c26e7fdb2621926dcf8eb6ce6afb" id="r_ac641c26e7fdb2621926dcf8eb6ce6afb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac641c26e7fdb2621926dcf8eb6ce6afb">Amplitude</a> (double length)</td></tr>
+<tr class="memdesc:ac641c26e7fdb2621926dcf8eb6ce6afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the legnth of the vector to a given amplitude.  <br /></td></tr>
 <tr class="separator:ac641c26e7fdb2621926dcf8eb6ce6afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad8ba0b2d030aa8ac482c1067c8732f" id="r_a4ad8ba0b2d030aa8ac482c1067c8732f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ad8ba0b2d030aa8ac482c1067c8732f">Cosines</a> ()</td></tr>
+<tr class="memdesc:a4ad8ba0b2d030aa8ac482c1067c8732f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cosines of the vector.  <br /></td></tr>
 <tr class="separator:a4ad8ba0b2d030aa8ac482c1067c8732f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94f5527a13e941b69a5bdfd4d1bb505b" id="r_a94f5527a13e941b69a5bdfd4d1bb505b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94f5527a13e941b69a5bdfd4d1bb505b">Project</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> other)</td></tr>
+<tr class="memdesc:a94f5527a13e941b69a5bdfd4d1bb505b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component of a vector when Projected onto another vector.  <br /></td></tr>
 <tr class="separator:a94f5527a13e941b69a5bdfd4d1bb505b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8e7d1377c9bbc6d986c76a07f4f73b8" id="r_ad8e7d1377c9bbc6d986c76a07f4f73b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8e7d1377c9bbc6d986c76a07f4f73b8">IsParallel</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> other)</td></tr>
+<tr class="memdesc:ad8e7d1377c9bbc6d986c76a07f4f73b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the vector is parallel to another vector.  <br /></td></tr>
 <tr class="separator:ad8e7d1377c9bbc6d986c76a07f4f73b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04afd0b71589e10084387e9d139e09a1" id="r_a04afd0b71589e10084387e9d139e09a1"><td class="memItemLeft" align="right" valign="top"><a id="a04afd0b71589e10084387e9d139e09a1" name="a04afd0b71589e10084387e9d139e09a1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOrthogonal</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> other)</td></tr>
+<tr class="memitem:a04afd0b71589e10084387e9d139e09a1" id="r_a04afd0b71589e10084387e9d139e09a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04afd0b71589e10084387e9d139e09a1">IsOrthogonal</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> other)</td></tr>
+<tr class="memdesc:a04afd0b71589e10084387e9d139e09a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the vector is orthogonal to another vector.  <br /></td></tr>
 <tr class="separator:a04afd0b71589e10084387e9d139e09a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a508127039f337fe1af2995896703484e" id="r_a508127039f337fe1af2995896703484e"><td class="memItemLeft" align="right" valign="top"><a id="a508127039f337fe1af2995896703484e" name="a508127039f337fe1af2995896703484e"></a>
-<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Inverse</b> ()</td></tr>
+<tr class="memitem:a508127039f337fe1af2995896703484e" id="r_a508127039f337fe1af2995896703484e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a508127039f337fe1af2995896703484e">Inverse</a> ()</td></tr>
+<tr class="memdesc:a508127039f337fe1af2995896703484e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the inverse of the vector.  <br /></td></tr>
 <tr class="separator:a508127039f337fe1af2995896703484e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a929d49df03ceb262c6051de2b129b289" id="r_a929d49df03ceb262c6051de2b129b289"><td class="memItemLeft" align="right" valign="top"><a id="a929d49df03ceb262c6051de2b129b289" name="a929d49df03ceb262c6051de2b129b289"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>DotProduct</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memitem:a929d49df03ceb262c6051de2b129b289" id="r_a929d49df03ceb262c6051de2b129b289"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a929d49df03ceb262c6051de2b129b289">DotProduct</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memdesc:a929d49df03ceb262c6051de2b129b289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the dot product between 2 vectors.  <br /></td></tr>
 <tr class="separator:a929d49df03ceb262c6051de2b129b289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b1dfb5e30604234067c9d7d2b3d7522" id="r_a5b1dfb5e30604234067c9d7d2b3d7522"><td class="memItemLeft" align="right" valign="top"><a id="a5b1dfb5e30604234067c9d7d2b3d7522" name="a5b1dfb5e30604234067c9d7d2b3d7522"></a>
-static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CrossProduct</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memitem:a5b1dfb5e30604234067c9d7d2b3d7522" id="r_a5b1dfb5e30604234067c9d7d2b3d7522"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b1dfb5e30604234067c9d7d2b3d7522">CrossProduct</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memdesc:a5b1dfb5e30604234067c9d7d2b3d7522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the cross product between 2 vectors.  <br /></td></tr>
 <tr class="separator:a5b1dfb5e30604234067c9d7d2b3d7522"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d86fdb991255fbcec91e2e429974106" id="r_a4d86fdb991255fbcec91e2e429974106"><td class="memItemLeft" align="right" valign="top"><a id="a4d86fdb991255fbcec91e2e429974106" name="a4d86fdb991255fbcec91e2e429974106"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>Angle</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html">SD_Plane</a> NOTIMPLEMENTED)</td></tr>
-<tr class="separator:a4d86fdb991255fbcec91e2e429974106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b26ddc98206d4eddb41135a599375b4" id="r_a4b26ddc98206d4eddb41135a599375b4"><td class="memItemLeft" align="right" valign="top"><a id="a4b26ddc98206d4eddb41135a599375b4" name="a4b26ddc98206d4eddb41135a599375b4"></a>
-static double&#160;</td><td class="memItemRight" valign="bottom"><b>TriangularArea</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memitem:a51db9640a7b942acb81ba9aef46c7470" id="r_a51db9640a7b942acb81ba9aef46c7470"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51db9640a7b942acb81ba9aef46c7470">Angle</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memdesc:a51db9640a7b942acb81ba9aef46c7470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the angle between 2 vectors.  <br /></td></tr>
+<tr class="separator:a51db9640a7b942acb81ba9aef46c7470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b26ddc98206d4eddb41135a599375b4" id="r_a4b26ddc98206d4eddb41135a599375b4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b26ddc98206d4eddb41135a599375b4">TriangularArea</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memdesc:a4b26ddc98206d4eddb41135a599375b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the triangular area between 2 vectors.  <br /></td></tr>
 <tr class="separator:a4b26ddc98206d4eddb41135a599375b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d8094cb29eb9a30c8a0879c26c11cb8" id="r_a4d8094cb29eb9a30c8a0879c26c11cb8"><td class="memItemLeft" align="right" valign="top"><a id="a4d8094cb29eb9a30c8a0879c26c11cb8" name="a4d8094cb29eb9a30c8a0879c26c11cb8"></a>
-static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Subtract</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memitem:a4d8094cb29eb9a30c8a0879c26c11cb8" id="r_a4d8094cb29eb9a30c8a0879c26c11cb8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d8094cb29eb9a30c8a0879c26c11cb8">Subtract</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memdesc:a4d8094cb29eb9a30c8a0879c26c11cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts 2 vectors.  <br /></td></tr>
 <tr class="separator:a4d8094cb29eb9a30c8a0879c26c11cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f32bf86919d3514670e24f00482d323" id="r_a5f32bf86919d3514670e24f00482d323"><td class="memItemLeft" align="right" valign="top"><a id="a5f32bf86919d3514670e24f00482d323" name="a5f32bf86919d3514670e24f00482d323"></a>
-static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memitem:a5f32bf86919d3514670e24f00482d323" id="r_a5f32bf86919d3514670e24f00482d323"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f32bf86919d3514670e24f00482d323">Add</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memdesc:a5f32bf86919d3514670e24f00482d323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds 2 vectors.  <br /></td></tr>
 <tr class="separator:a5f32bf86919d3514670e24f00482d323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9953e464c967d7a9ef62a7e04cfc1274" id="r_a9953e464c967d7a9ef62a7e04cfc1274"><td class="memItemLeft" align="right" valign="top"><a id="a9953e464c967d7a9ef62a7e04cfc1274" name="a9953e464c967d7a9ef62a7e04cfc1274"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Coplanar</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector3)</td></tr>
+<tr class="memitem:a9953e464c967d7a9ef62a7e04cfc1274" id="r_a9953e464c967d7a9ef62a7e04cfc1274"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9953e464c967d7a9ef62a7e04cfc1274">Coplanar</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector3)</td></tr>
+<tr class="memdesc:a9953e464c967d7a9ef62a7e04cfc1274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether 3 vectors are coplanar.  <br /></td></tr>
 <tr class="separator:a9953e464c967d7a9ef62a7e04cfc1274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf67e96de68da282cd0ef0ba85b46fa" id="r_a9bf67e96de68da282cd0ef0ba85b46fa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bf67e96de68da282cd0ef0ba85b46fa">GramSchmit</a> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector1, <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> vector2)</td></tr>
+<tr class="memdesc:a9bf67e96de68da282cd0ef0ba85b46fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an orthogonal vector to the first vector in a plane defined by both vectors.  <br /></td></tr>
 <tr class="separator:a9bf67e96de68da282cd0ef0ba85b46fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2710c2f07917c60ca834d670b5ce4e" id="r_a1c2710c2f07917c60ca834d670b5ce4e"><td class="memItemLeft" align="right" valign="top"><a id="a1c2710c2f07917c60ca834d670b5ce4e" name="a1c2710c2f07917c60ca834d670b5ce4e"></a>
-static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnitX</b> ()</td></tr>
+<tr class="memitem:a1c2710c2f07917c60ca834d670b5ce4e" id="r_a1c2710c2f07917c60ca834d670b5ce4e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c2710c2f07917c60ca834d670b5ce4e">UnitX</a> ()</td></tr>
+<tr class="memdesc:a1c2710c2f07917c60ca834d670b5ce4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a unit vector in the x-direction.  <br /></td></tr>
 <tr class="separator:a1c2710c2f07917c60ca834d670b5ce4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7bf100389f3d46266eb48f28ffc04d" id="r_a7e7bf100389f3d46266eb48f28ffc04d"><td class="memItemLeft" align="right" valign="top"><a id="a7e7bf100389f3d46266eb48f28ffc04d" name="a7e7bf100389f3d46266eb48f28ffc04d"></a>
-static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnitY</b> ()</td></tr>
+<tr class="memitem:a7e7bf100389f3d46266eb48f28ffc04d" id="r_a7e7bf100389f3d46266eb48f28ffc04d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e7bf100389f3d46266eb48f28ffc04d">UnitY</a> ()</td></tr>
+<tr class="memdesc:a7e7bf100389f3d46266eb48f28ffc04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a unit vector in the y-direction.  <br /></td></tr>
 <tr class="separator:a7e7bf100389f3d46266eb48f28ffc04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc46a6d1c1568906c9f8c7dce10f4629" id="r_afc46a6d1c1568906c9f8c7dce10f4629"><td class="memItemLeft" align="right" valign="top"><a id="afc46a6d1c1568906c9f8c7dce10f4629" name="afc46a6d1c1568906c9f8c7dce10f4629"></a>
-static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UnitZ</b> ()</td></tr>
+<tr class="memitem:afc46a6d1c1568906c9f8c7dce10f4629" id="r_afc46a6d1c1568906c9f8c7dce10f4629"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc46a6d1c1568906c9f8c7dce10f4629">UnitZ</a> ()</td></tr>
+<tr class="memdesc:afc46a6d1c1568906c9f8c7dce10f4629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a unit vector in the z-direction.  <br /></td></tr>
 <tr class="separator:afc46a6d1c1568906c9f8c7dce10f4629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8b800e49f0540ba572ceac248d3becf" id="r_ac8b800e49f0540ba572ceac248d3becf"><td class="memItemLeft" align="right" valign="top"><a id="ac8b800e49f0540ba572ceac248d3becf" name="ac8b800e49f0540ba572ceac248d3becf"></a>
 static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> left, double value)</td></tr>
@@ -237,15 +233,299 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <tr class="separator:a9cfa1f528fe7c60609f3b6479c4da699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a> object. </p>
+<div class="textblock"><p><code><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___plane.html" title="SD_Plane Class for creating a 3D plane.">SD_Plane</a></code> Class for creating a 3D plane. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4d306be0aa902b296a2f19ecd962d1ca" name="a4d306be0aa902b296a2f19ecd962d1ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d306be0aa902b296a2f19ecd962d1ca">&#9670;&#160;</a></span>SD_Vector() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Vector.SD_Vector </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a 3D vector from a 3 doubles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">test</td><td></td></tr>
+    <tr><td class="paramname">x</td><td>(double) The value for the x coordinate of the vector.</td></tr>
+    <tr><td class="paramname">y</td><td>(double) The value for the y coordinate of the vector.</td></tr>
+    <tr><td class="paramname">z</td><td>(double) The value for the z coordinate of the vector.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<dl class="section return"><dt>Returns</dt><dd>A 3D vector. </dd></dl>
+
+</div>
+</div>
+<a id="a50cb0d9d44c6a5aee95e2bd1f601bfd8" name="a50cb0d9d44c6a5aee95e2bd1f601bfd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50cb0d9d44c6a5aee95e2bd1f601bfd8">&#9670;&#160;</a></span>SD_Vector() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Vector.SD_Vector </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a 3D vector from a double. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>(double) The value for the x,y and z coordinate of the vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 3D vector. </dd></dl>
+
+</div>
+</div>
+<a id="abf1f0fc1bde087660142b8ca4b7a65fd" name="abf1f0fc1bde087660142b8ca4b7a65fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1f0fc1bde087660142b8ca4b7a65fd">&#9670;&#160;</a></span>SD_Vector() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Vector.SD_Vector </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>vectorString</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a 3D vector from a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vectorString</td><td>(string) A string with the cooridnate information for the vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 3D vector. </dd></dl>
+
+</div>
+</div>
+<a id="a41f654545315a1b0b93f0af330354135" name="a41f654545315a1b0b93f0af330354135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f654545315a1b0b93f0af330354135">&#9670;&#160;</a></span>SD_Vector() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Vector.SD_Vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a></td>          <td class="paramname"><span class="paramname"><em>point</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a 3d vector from a point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>(SD_Point) A point from which to construct the vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 3d vector. </dd></dl>
+
+</div>
+</div>
+<a id="aef187a7f9c5bc70914495e7370ab2769" name="aef187a7f9c5bc70914495e7370ab2769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef187a7f9c5bc70914495e7370ab2769">&#9670;&#160;</a></span>SD_Vector() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SD_Model.Vector.SD_Vector.SD_Vector </td>
+          <td>(</td>
+          <td class="paramtype">double[]</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a 3d vector from a double array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>(double []) A double array defining the coordinates of the 3d vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A 3d vector. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5f32bf86919d3514670e24f00482d323" name="a5f32bf86919d3514670e24f00482d323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f32bf86919d3514670e24f00482d323">&#9670;&#160;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds 2 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector1</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The first vector.</td></tr>
+    <tr><td class="paramname">vector2</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultant vector. </dd></dl>
+
+</div>
+</div>
+<a id="ac641c26e7fdb2621926dcf8eb6ce6afb" name="ac641c26e7fdb2621926dcf8eb6ce6afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac641c26e7fdb2621926dcf8eb6ce6afb">&#9670;&#160;</a></span>Amplitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.Amplitude </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>length</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the legnth of the vector to a given amplitude. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">length</td><td>(double) The amplitude of the vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated vector. </dd></dl>
+
+</div>
+</div>
+<a id="a51db9640a7b942acb81ba9aef46c7470" name="a51db9640a7b942acb81ba9aef46c7470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51db9640a7b942acb81ba9aef46c7470">&#9670;&#160;</a></span>Angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double SD_Model.Vector.SD_Vector.Angle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the angle between 2 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector1</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The first vector.</td></tr>
+    <tr><td class="paramname">vector2</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The angle between the vectors. </dd></dl>
+
+</div>
+</div>
+<a id="a9953e464c967d7a9ef62a7e04cfc1274" name="a9953e464c967d7a9ef62a7e04cfc1274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9953e464c967d7a9ef62a7e04cfc1274">&#9670;&#160;</a></span>Coplanar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool SD_Model.Vector.SD_Vector.Coplanar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector3</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether 3 vectors are coplanar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector1</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The first vector.</td></tr>
+    <tr><td class="paramname">vector2</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The second vector.</td></tr>
+    <tr><td class="paramname">vector3</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The third vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 'true' if the vectors are coplanar. </dd></dl>
+
+</div>
+</div>
 <a id="a4ad8ba0b2d030aa8ac482c1067c8732f" name="a4ad8ba0b2d030aa8ac482c1067c8732f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ad8ba0b2d030aa8ac482c1067c8732f">&#9670;&#160;</a></span>Cosines()</h2>
 
@@ -260,7 +540,145 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the cosines of the vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The cosines of the vector. </dd></dl>
 <p>Returns the directional cosines for a vector</p>
+
+</div>
+</div>
+<a id="a5b1dfb5e30604234067c9d7d2b3d7522" name="a5b1dfb5e30604234067c9d7d2b3d7522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b1dfb5e30604234067c9d7d2b3d7522">&#9670;&#160;</a></span>CrossProduct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.CrossProduct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the cross product between 2 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector1</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The first vector.</td></tr>
+    <tr><td class="paramname">vector2</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The cross product of both vectors. </dd></dl>
+
+</div>
+</div>
+<a id="a929d49df03ceb262c6051de2b129b289" name="a929d49df03ceb262c6051de2b129b289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929d49df03ceb262c6051de2b129b289">&#9670;&#160;</a></span>DotProduct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double SD_Model.Vector.SD_Vector.DotProduct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the dot product between 2 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector1</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The first vector.</td></tr>
+    <tr><td class="paramname">vector2</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dot product of both vectors. </dd></dl>
+
+</div>
+</div>
+<a id="a841dffc7b3a4ee1ccf4962b1262f6339" name="a841dffc7b3a4ee1ccf4962b1262f6339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a841dffc7b3a4ee1ccf4962b1262f6339">&#9670;&#160;</a></span>Equals() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SD_Model.Vector.SD_Vector.Equals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a vector is equal to another vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The vector to check against.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Retruns 'true' if the vectors are equal. </dd></dl>
+
+</div>
+</div>
+<a id="a38beb2aaf2c09d4cbc77dde29a1c1d44" name="a38beb2aaf2c09d4cbc77dde29a1c1d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38beb2aaf2c09d4cbc77dde29a1c1d44">&#9670;&#160;</a></span>Equals() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SD_Model.Vector.SD_Vector.Equals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tolerance</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a vector is equal to another vector within a given tolerance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The vector to check against.</td></tr>
+    <tr><td class="paramname">tolerance</td><td>(double) The tolerance between the 2 vectors.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Retruns 'true' if the vectors are equal. </dd></dl>
 
 </div>
 </div>
@@ -290,7 +708,62 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates an orthogonal vector to the first vector in a plane defined by both vectors</p>
+
+<p>Creates an orthogonal vector to the first vector in a plane defined by both vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector1</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The first vector.</td></tr>
+    <tr><td class="paramname">vector2</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Resultant orthogonal vector. </dd></dl>
+
+</div>
+</div>
+<a id="a508127039f337fe1af2995896703484e" name="a508127039f337fe1af2995896703484e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508127039f337fe1af2995896703484e">&#9670;&#160;</a></span>Inverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.Inverse </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the inverse of the vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The inverse of the vector. </dd></dl>
+
+</div>
+</div>
+<a id="a04afd0b71589e10084387e9d139e09a1" name="a04afd0b71589e10084387e9d139e09a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04afd0b71589e10084387e9d139e09a1">&#9670;&#160;</a></span>IsOrthogonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SD_Model.Vector.SD_Vector.IsOrthogonal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the vector is orthogonal to another vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The vector to check agaisnt.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 'true' if the vectors are orthogonal. </dd></dl>
 
 </div>
 </div>
@@ -308,7 +781,35 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Checks whether vector is parallel to other vector</p>
+
+<p>Checks whether the vector is parallel to another vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The vector to check agaisnt.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns 'true' if the vectors are parallel. </dd></dl>
+
+</div>
+</div>
+<a id="a7bf24429bc2651c49770ac737cb394b5" name="a7bf24429bc2651c49770ac737cb394b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf24429bc2651c49770ac737cb394b5">&#9670;&#160;</a></span>Magnitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SD_Model.Vector.SD_Vector.Magnitude </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the magnitude of the vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The magnitude of the vector. </dd></dl>
 
 </div>
 </div>
@@ -326,7 +827,303 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the component of a vector when Projected onto another vector</p>
+
+<p>Returns the component of a vector when Projected onto another vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The vector to project onto.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The projected vector. </dd></dl>
+
+</div>
+</div>
+<a id="a70473e385777e9e8c43803f782d3aba1" name="a70473e385777e9e8c43803f782d3aba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70473e385777e9e8c43803f782d3aba1">&#9670;&#160;</a></span>Reverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.Reverse </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the reverse of the vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The reverse of the vector. </dd></dl>
+
+</div>
+</div>
+<a id="a4d8094cb29eb9a30c8a0879c26c11cb8" name="a4d8094cb29eb9a30c8a0879c26c11cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8094cb29eb9a30c8a0879c26c11cb8">&#9670;&#160;</a></span>Subtract()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.Subtract </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subtracts 2 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector1</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The first vector.</td></tr>
+    <tr><td class="paramname">vector2</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultant vector. </dd></dl>
+
+</div>
+</div>
+<a id="aa442d655683a900d4750120b680826fd" name="aa442d655683a900d4750120b680826fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa442d655683a900d4750120b680826fd">&#9670;&#160;</a></span>ToArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double[] SD_Model.Vector.SD_Vector.ToArray </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array representing the 3d vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>An array representing the 3d vector. </dd></dl>
+
+</div>
+</div>
+<a id="a754fe714544bab2398b648d65ce0a4a7" name="a754fe714544bab2398b648d65ce0a4a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754fe714544bab2398b648d65ce0a4a7">&#9670;&#160;</a></span>ToPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_geometry_1_1_s_d___point.html">SD_Point</a> SD_Model.Vector.SD_Vector.ToPoint </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Converts the 3d vector to a point. </p>
+<dl class="section return"><dt>Returns</dt><dd>A point representing the 3d vector. </dd></dl>
+
+</div>
+</div>
+<a id="a8bdd4b9cd8515f48c2f63826c0677380" name="a8bdd4b9cd8515f48c2f63826c0677380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bdd4b9cd8515f48c2f63826c0677380">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string SD_Model.Vector.SD_Vector.ToString </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a string representing the 3d vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the 3d vector. </dd></dl>
+
+</div>
+</div>
+<a id="a4b26ddc98206d4eddb41135a599375b4" name="a4b26ddc98206d4eddb41135a599375b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b26ddc98206d4eddb41135a599375b4">&#9670;&#160;</a></span>TriangularArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double SD_Model.Vector.SD_Vector.TriangularArea </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></td>          <td class="paramname"><span class="paramname"><em>vector2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the triangular area between 2 vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector1</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The first vector.</td></tr>
+    <tr><td class="paramname">vector2</td><td>(<a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html" title="SD_Plane Class for creating a 3D plane.">SD_Vector</a>) The second vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The triangular area between the vectors. </dd></dl>
+
+</div>
+</div>
+<a id="aa0f6c6dc16cf1c6412442220d7758c5a" name="aa0f6c6dc16cf1c6412442220d7758c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f6c6dc16cf1c6412442220d7758c5a">&#9670;&#160;</a></span>Unit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.Unit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a unit vector of the current vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The unit vector. </dd></dl>
+
+</div>
+</div>
+<a id="a1c2710c2f07917c60ca834d670b5ce4e" name="a1c2710c2f07917c60ca834d670b5ce4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2710c2f07917c60ca834d670b5ce4e">&#9670;&#160;</a></span>UnitX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.UnitX </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a unit vector in the x-direction. </p>
+<dl class="section return"><dt>Returns</dt><dd>Unit vector aligned with the global x-axis. </dd></dl>
+
+</div>
+</div>
+<a id="a7e7bf100389f3d46266eb48f28ffc04d" name="a7e7bf100389f3d46266eb48f28ffc04d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7bf100389f3d46266eb48f28ffc04d">&#9670;&#160;</a></span>UnitY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.UnitY </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a unit vector in the y-direction. </p>
+<dl class="section return"><dt>Returns</dt><dd>Unit vector aligned with the global y-axis. </dd></dl>
+
+</div>
+</div>
+<a id="afc46a6d1c1568906c9f8c7dce10f4629" name="afc46a6d1c1568906c9f8c7dce10f4629"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc46a6d1c1568906c9f8c7dce10f4629">&#9670;&#160;</a></span>UnitZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.UnitZ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a unit vector in the z-direction. </p>
+<dl class="section return"><dt>Returns</dt><dd>Unit vector aligned with the global z-axis. </dd></dl>
+
+</div>
+</div>
+<a id="a70be46b0a507fdf147279dae12beb09b" name="a70be46b0a507fdf147279dae12beb09b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70be46b0a507fdf147279dae12beb09b">&#9670;&#160;</a></span>UpdateFromArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a> SD_Model.Vector.SD_Vector.UpdateFromArray </td>
+          <td>(</td>
+          <td class="paramtype">double[]</td>          <td class="paramname"><span class="paramname"><em>arr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the vector coordinates from an array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arr</td><td>(double []) A double array defining the coordinates of the 3d vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated vector. </dd></dl>
 
 </div>
 </div>
@@ -334,13 +1131,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>Z</b><code> [get, s
 <li>Vector/<b>SD_Vector.cs</b></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="namespace_s_d___model.html">SD_Model</a></li><li class="navelem"><a class="el" href="namespace_s_d___model_1_1_vector.html">Vector</a></li><li class="navelem"><a class="el" href="class_s_d___model_1_1_vector_1_1_s_d___vector.html">SD_Vector</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
 </body>
 </html>
