@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SD_Model_Examples/1.0.0": {
+        "dependencies": {
+          "SD_Model": "1.0.0"
+        },
+        "runtime": {
+          "SD_Model_Examples.dll": {}
+        }
+      },
+      "SD_Model/1.0.0": {
+        "runtime": {
+          "SD_Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SD_Model_Examples/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SD_Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
