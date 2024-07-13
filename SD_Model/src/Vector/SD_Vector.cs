@@ -5,8 +5,8 @@ using SD_Model.Geometry;
 namespace SD_Model.Vector
 {
     /// <summary>
-    /// <c>SD_Plane</c> 
-    /// Class for creating a 3D plane.
+    /// <c>SD_Vector</c> 
+    /// Class for creating a 3D vector.
     /// </summary>
     public class SD_Vector
     {
