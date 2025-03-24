@@ -70,6 +70,132 @@ SD_Vector plane_x_vec = new_plane.XVector;
 SD_Vector plane_y_vec = new_plane.YVector;
 SD_Vector plane_z_vec = new_plane.ZVector;
 ```
+## Examples
+
+### 1. Creating a Vector
+You can create a 3D vector using different constructors:
+
+```csharp
+SD_Vector v1 = new SD_Vector(1.0, 2.0, 3.0); // From individual coordinates
+SD_Vector v2 = new SD_Vector(5.0); // Same value for x, y, and z
+SD_Vector v3 = new SD_Vector("{4.0, 5.0, 6.0}"); // From a string
+```
+
+### 2. Converting a Vector
+The `ToString`, `ToArray`, and `ToPoint` methods allow conversion:
+
+```csharp
+SD_Vector v = new SD_Vector(1.0, 2.0, 3.0);
+Console.WriteLine(v.ToString()); // "{1.0, 2.0, 3.0}"
+
+double[] arr = v.ToArray(); // [1.0, 2.0, 3.0]
+SD_Point p = v.ToPoint(); // Convert to point
+```
+
+### 3. Basic Vector Operations
+Performing arithmetic operations on vectors:
+
+```csharp
+SD_Vector v1 = new SD_Vector(3.0, 4.0, 5.0);
+SD_Vector v2 = new SD_Vector(1.0, 1.0, 1.0);
+
+SD_Vector v3 = v1 + v2; // Addition: {4.0, 5.0, 6.0}
+SD_Vector v4 = v1 - v2; // Subtraction: {2.0, 3.0, 4.0}
+SD_Vector v5 = v1 * 2;   // Scalar multiplication: {6.0, 8.0, 10.0}
+SD_Vector v6 = v1 / 2;   // Scalar division: {1.5, 2.0, 2.5}
+```
+
+### 4. Dot Product and Cross Product
+Computing dot and cross products between vectors:
+
+```csharp
+SD_Vector v1 = new SD_Vector(1.0, 0.0, 0.0);
+SD_Vector v2 = new SD_Vector(0.0, 1.0, 0.0);
+
+double dot = SD_Vector.DotProduct(v1, v2); // 0.0 (Orthogonal vectors)
+SD_Vector cross = SD_Vector.CrossProduct(v1, v2); // {0.0, 0.0, 1.0}
+```
+
+### 5. Checking Vector Properties
+Determining relationships between vectors:
+
+```csharp
+SD_Vector v1 = new SD_Vector(2.0, 2.0, 2.0);
+SD_Vector v2 = new SD_Vector(4.0, 4.0, 4.0);
+SD_Vector v3 = new SD_Vector(1.0, -1.0, 0.0);
+
+bool isParallel = v1.IsParallel(v2); // True
+bool isOrthogonal = v1.IsOrthogonal(v3); // False
+```
+
+### Example 6: Creating a Line from Two Points
+```csharp
+SD_Point point1 = new SD_Point(0, 0, 0);
+SD_Point point2 = new SD_Point(3, 4, 5);
+SD_Line line = new SD_Line(point1, point2);
+Console.WriteLine(line.ToString()); // Outputs the start and end points of the line
+```
+
+### Example 7: Creating a Line from a Point and a Vector
+```csharp
+SD_Point startPoint = new SD_Point(1, 2, 3);
+SD_Vector direction = new SD_Vector(4, 5, 6);
+SD_Line line = new SD_Line(startPoint, direction);
+Console.WriteLine(line.ToString());
+```
+
+### Example 8: Getting the Midpoint of a Line
+```csharp
+SD_Point point1 = new SD_Point(0, 0, 0);
+SD_Point point2 = new SD_Point(4, 4, 4);
+SD_Line line = new SD_Line(point1, point2);
+SD_Point midPoint = line.MidPoint();
+Console.WriteLine(midPoint.ToString()); // Outputs (2,2,2)
+```
+
+### Example 9: Checking if Two Lines are Parallel
+```csharp
+SD_Point p1 = new SD_Point(0, 0, 0);
+SD_Point p2 = new SD_Point(3, 3, 3);
+SD_Line line1 = new SD_Line(p1, p2);
+
+SD_Point p3 = new SD_Point(1, 1, 1);
+SD_Point p4 = new SD_Point(4, 4, 4);
+SD_Line line2 = new SD_Line(p3, p4);
+
+bool isParallel = line1.IsParallel(line2);
+Console.WriteLine(isParallel); // Outputs: True
+```
+
+### Example 10: Dividing a Line into Equal Parts
+```csharp
+SD_Point point1 = new SD_Point(0, 0, 0);
+SD_Point point2 = new SD_Point(10, 10, 10);
+SD_Line line = new SD_Line(point1, point2);
+
+var divisions = line.Divide(4);
+foreach (var point in divisions.Item1)
+{
+    Console.WriteLine(point.ToString()); // Outputs division points
+}
+```
+### Example 11: Check if Point is On Line
+```csharp
+
+// Define two points to create a line
+SD_Point startPoint = new SD_Point(0, 0, 0);
+SD_Point endPoint = new SD_Point(10, 10, 10);
+SD_Line line = new SD_Line(startPoint, endPoint);
+
+// Define a point to check
+SD_Point pointOnLine = new SD_Point(5, 5, 5);  // Lies on the line
+SD_Point pointOffLine = new SD_Point(5, 6, 5); // Does not lie on the line
+
+// Check if points are on the line
+Console.WriteLine($"Is (5,5,5) on the line? {line.IsPointOnLine(pointOnLine)}");
+Console.WriteLine($"Is (5,6,5) on the line? {line.IsPointOnLine(pointOffLine)}");
+
+```
 
 ## Documentation
 
