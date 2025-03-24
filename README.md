@@ -58,6 +58,19 @@ var result = vector1.Add(vector2);
 Console.WriteLine($"Resulting Vector: {result}");
 ```
 
+```csharp
+SD_Point point_1 = new SD_Point(0.5, 0.5, 1);
+SD_Point point_2 = new SD_Point(1, 0, 0);
+SD_Point point_3 = new SD_Point(0, 0, 1);
+
+SD_Plane new_plane = new SD_Plane(point_1, point_2, point_3);
+
+SD_Vector plane_origin = new_plane.Origin;
+SD_Vector plane_x_vec = new_plane.XVector;
+SD_Vector plane_y_vec = new_plane.YVector;
+SD_Vector plane_z_vec = new_plane.ZVector;
+```
+
 ## Documentation
 
 Detailed documentation is available in the `docs` folder of the repository. It includes:
